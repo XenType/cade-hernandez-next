@@ -126,7 +126,7 @@ const ProjectsContent: React.FC = () => {
                     </div>
                     <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                       <FormattedLink
-                        href="https://cadehernandez.com/resources/RunZeepBop-Windows.zip"
+                        href="https://drive.google.com/file/d/1i3CufjSuVxftgySxQn-mUGhACAgeWmi0/view?usp=drive_link"
                         title="Download Game"
                         newTab
                       >

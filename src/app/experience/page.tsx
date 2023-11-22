@@ -13,7 +13,7 @@ const ExperienceContent: React.FC = () => {
           <Attention />
         </div>
         <FormattedLink
-          href="https://www.cadehernandez.com/docs/resume2.pdf"
+          href="https://drive.google.com/file/d/1caQDQ0pAgIfNIpWZZpKYAodqEkkggEmR/view?usp=sharing"
           title="My Resume"
           newTab
         >
