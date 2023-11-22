@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.triangle-background {
+  background-image: url("/images/TriangleBackground.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.header-logo {
+  background-image: url("/images/NameLogo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.stencil-font {
+  font-family: "Allerta Stencil";
+}
+
+.design-2-body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.cade-image-md {
+  background: url("/images/cade.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 50%;
+  background-size: 250px;
+}
+
+.experience-background {
+  background-image: url("/images/e-commerce.png");
+  background-size: cover;
+}
+
+.skills-background {
+  background-image: url("/images/early-career.png");
+  background-size: cover;
+}
+
+.projects-background {
+  background-image: url("/images/branching-out.png");
+  background-size: cover;
+}
+
+.contact-background {
+  background-image: url("/images/growing-up.png");
+  background-size: cover;
 }
