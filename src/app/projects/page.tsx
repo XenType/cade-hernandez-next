@@ -87,12 +87,13 @@ const ProjectsContent: React.FC = () => {
               <ProjectItem type="website" title="CadeHernandez.com">
                 <div>
                   This website was written in TypeScript with React and
-                  TailwindCSS.
+                  TailwindCSS. It is a Next.js app running on Google Cloud
+                  Platform.
                 </div>
                 <div className="flex flex-row justify-around my-1">
                   <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                     <FormattedLink
-                      href="https://github.com/XenType/cade-hernandez-dot-com"
+                      href="https://github.com/XenType/cade-hernandez-next"
                       title="View on GitHub"
                       newTab
                     >
