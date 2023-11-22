@@ -1,6 +1,7 @@
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ArticleIcon from '@mui/icons-material/Article';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ArticleIcon from "@mui/icons-material/Article";
+import Link from "next/link";
 
 const FooterRow: React.FC = () => {
   return (
@@ -30,12 +31,16 @@ const FooterRow: React.FC = () => {
           </a>
         </div>
         <div className="text-xl pb-1">
-          <a title="Resume" target="_blank" href="docs/resume2.pdf">
+          <Link
+            title="Resume"
+            target="_blank"
+            href="https://drive.google.com/file/d/1caQDQ0pAgIfNIpWZZpKYAodqEkkggEmR/view?usp=sharing"
+          >
             <ArticleIcon
               className="text-amber-600 hover:text-blue-700 hover:cursor-pointer"
               fontSize="inherit"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
