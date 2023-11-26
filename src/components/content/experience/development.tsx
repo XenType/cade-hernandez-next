@@ -14,7 +14,8 @@ const Development: React.FC = () => {
           <Panel>
             <div className="text-xl">Independent Contractor</div>
             <div>Waco & Austin, TX</div>
-            <div className="text-sm">2003-2012</div>
+            <div className="text-sm">2003-2016</div>
+            <div className="text-sm">2023-Present</div>
           </Panel>
           <Panel>
             <div className="text-xl">Senior Software Engineer</div>
