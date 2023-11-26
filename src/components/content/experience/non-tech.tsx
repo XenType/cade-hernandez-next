@@ -19,6 +19,12 @@ const NonTech: React.FC = () => {
             <div className="text-sm">Dagar's Catering - Austin TX</div>
           </Panel>
           <Panel>
+            <div className="text-lg">Trainer</div>
+            <div className="text-sm">Dagar's Catering - Austin TX</div>
+            <div className="text-sm">Blizzard Entertainment - Austin TX</div>
+            <div className="text-sm">Volusion - Austin TX</div>
+          </Panel>
+          <Panel>
             <div className="text-lg">Assistant Manager</div>
             <div className="text-sm">1431 Cafe - Cedar Park TX</div>
           </Panel>
@@ -26,12 +32,6 @@ const NonTech: React.FC = () => {
             <div className="text-lg">Customer Support</div>
             <div className="text-sm">Volusion - Austin TX</div>
             <div className="text-sm">Blizzard Entertainment - Austin TX</div>
-          </Panel>
-          <Panel>
-            <div className="text-lg">Trainer</div>
-            <div className="text-sm">Dagar's Catering - Austin TX</div>
-            <div className="text-sm">Blizzard Entertainment - Austin TX</div>
-            <div className="text-sm">Volusion - Austin TX</div>
           </Panel>
         </div>
       </div>

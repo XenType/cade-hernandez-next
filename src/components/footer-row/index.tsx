@@ -34,7 +34,7 @@ const FooterRow: React.FC = () => {
           <Link
             title="Resume"
             target="_blank"
-            href="https://drive.google.com/file/d/1caQDQ0pAgIfNIpWZZpKYAodqEkkggEmR/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Zt75IxkleDjLWaQeb6HgyZulwsb3sCSB/view?usp=sharing"
           >
             <ArticleIcon
               className="text-amber-600 hover:text-blue-700 hover:cursor-pointer"
