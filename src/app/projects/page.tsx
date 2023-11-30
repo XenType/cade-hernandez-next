@@ -1,7 +1,8 @@
-import { PagePath } from "@/components/enum";
+import { ExternalLinkNames, PagePath } from "@/components/enum";
 import FormattedLink from "@/components/content/common/formatted-link";
 import Indentation from "@/components/content/common/indentation";
 import ProjectItem from "@/components/content/common/project-item";
+import { ExternalLinks } from "@/components/constants";
 
 const ProjectsContent: React.FC = () => {
   return (
@@ -35,7 +36,7 @@ const ProjectsContent: React.FC = () => {
                   A collaborative project allowing me to use years of e-commerce
                   experience to generate passive income. Visit us at{" "}
                   <FormattedLink
-                    href="https://www.zocapet.com"
+                    href={ExternalLinks[ExternalLinkNames.ZOCAPET]}
                     title="ZoCa Pet Store"
                     newTab
                   >
@@ -93,7 +94,7 @@ const ProjectsContent: React.FC = () => {
                 <div className="flex flex-row justify-around my-1">
                   <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                     <FormattedLink
-                      href="https://github.com/XenType/cade-hernandez-next"
+                      href={ExternalLinks[ExternalLinkNames.WEBSITE_SOURCE]}
                       title="View on GitHub"
                       newTab
                     >
@@ -116,7 +117,7 @@ const ProjectsContent: React.FC = () => {
                   <div className="flex flex-row justify-around my-1">
                     <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                       <FormattedLink
-                        href="https://github.com/XenType/RunZeepBop"
+                        href={ExternalLinks[ExternalLinkNames.ZEEPBOP_SOURCE]}
                         title="View on GitHub"
                         newTab
                       >
@@ -126,7 +127,7 @@ const ProjectsContent: React.FC = () => {
                     </div>
                     <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                       <FormattedLink
-                        href="https://drive.google.com/file/d/1i3CufjSuVxftgySxQn-mUGhACAgeWmi0/view?usp=drive_link"
+                        href={ExternalLinks[ExternalLinkNames.ZEEPBOP_GAME]}
                         title="Download Game"
                         newTab
                       >
@@ -158,7 +159,9 @@ const ProjectsContent: React.FC = () => {
                   <div className="flex flex-row justify-around my-1">
                     <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                       <FormattedLink
-                        href="https://www.npmjs.com/package/test-logic"
+                        href={
+                          ExternalLinks[ExternalLinkNames.TESTLOGIC_PACKAGE]
+                        }
                         title="View on NPMjs"
                         newTab
                       >
@@ -168,7 +171,7 @@ const ProjectsContent: React.FC = () => {
                     </div>
                     <div className="bg-white/70 max-w-max px-2 rounded-sm drop-shadow-md">
                       <FormattedLink
-                        href="https://github.com/XenType/test-logic"
+                        href={ExternalLinks[ExternalLinkNames.TESTLOGIC_SOURCE]}
                         title="View on GitHub"
                         newTab
                       >

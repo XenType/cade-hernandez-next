@@ -2,6 +2,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArticleIcon from "@mui/icons-material/Article";
 import Link from "next/link";
+import { ExternalLinks } from "../constants";
+import { ExternalLinkNames } from "../enum";
 
 const FooterRow: React.FC = () => {
   return (
@@ -14,7 +16,7 @@ const FooterRow: React.FC = () => {
           <a
             title="LinkedIn"
             target="_blank"
-            href="https://www.linkedin.com/in/cade-hernandez-9a9572264"
+            href={ExternalLinks[ExternalLinkNames.LINKEDIN]}
           >
             <LinkedInIcon
               className="text-amber-600 hover:text-blue-700 hover:cursor-pointer"
@@ -23,7 +25,7 @@ const FooterRow: React.FC = () => {
           </a>
         </div>
         <div className="text-xl pb-1">
-          <a title="GitHub" target="_blank" href="https://github.com/XenType">
+          <a title="GitHub" target="_blank" href={ExternalLinks[ExternalLinkNames.GITHUB]}>
             <GitHubIcon
               className="text-amber-600 hover:text-blue-700 hover:cursor-pointer"
               fontSize="inherit"
@@ -34,7 +36,7 @@ const FooterRow: React.FC = () => {
           <Link
             title="Resume"
             target="_blank"
-            href="https://drive.google.com/file/d/1Zt75IxkleDjLWaQeb6HgyZulwsb3sCSB/view?usp=sharing"
+            href={ExternalLinks[ExternalLinkNames.RESUME]}
           >
             <ArticleIcon
               className="text-amber-600 hover:text-blue-700 hover:cursor-pointer"

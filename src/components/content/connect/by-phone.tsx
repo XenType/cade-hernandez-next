@@ -1,4 +1,6 @@
+import { ExternalLinks } from "@/components/constants";
 import FormattedLink from "../common/formatted-link";
+import { ExternalLinkNames } from "@/components/enum";
 
 const ByPhone: React.FC = () => {
   return (
@@ -9,7 +11,11 @@ const ByPhone: React.FC = () => {
       <div className="px-4 flex flex-col items-center">
         <div className="flex flex-col items-center md:mt-8 mb-4">
           <div>
-            <FormattedLink href="tel:4154815756" title="Cell Phone" newTab>
+            <FormattedLink
+              href={ExternalLinks[ExternalLinkNames.PHONE]}
+              title="Cell Phone"
+              newTab
+            >
               (415) 481-5756
             </FormattedLink>
           </div>

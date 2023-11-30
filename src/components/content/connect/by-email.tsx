@@ -1,4 +1,6 @@
+import { ExternalLinks } from "@/components/constants";
 import FormattedLink from "../common/formatted-link";
+import { ExternalLinkNames } from "@/components/enum";
 
 const ByEmail: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const ByEmail: React.FC = () => {
         <div className="flex flex-col items-center md:mt-4 mb-2">
           <div>
             <FormattedLink
-              href="mailto:info@cadehernandez.com"
+              href={ExternalLinks[ExternalLinkNames.EMAIL_PROFESSIONAL]}
               title="Professional Email"
               newTab
             >
@@ -22,7 +24,7 @@ const ByEmail: React.FC = () => {
         <div className="flex flex-col items-center mb-2">
           <div>
             <FormattedLink
-              href="mailto:c.cade.hernandez@gmail.com"
+              href={ExternalLinks[ExternalLinkNames.EMAIL_PERSONAL]}
               title="Personal Email"
               newTab
             >

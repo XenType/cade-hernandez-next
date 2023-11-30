@@ -1,4 +1,6 @@
+import { ExternalLinks } from "@/components/constants";
 import FormattedLink from "../common/formatted-link";
+import { ExternalLinkNames } from "@/components/enum";
 
 const Zoca: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const Zoca: React.FC = () => {
         <div className="flex flex-col items-center mb-2 md:mt-4">
           <div>
             <FormattedLink
-              href="https://www.zocapet.com"
+              href={ExternalLinks[ExternalLinkNames.ZOCAPET]}
               title="Visit ZoCaPet.com"
               newTab
             >
@@ -22,7 +24,7 @@ const Zoca: React.FC = () => {
         <div className="flex flex-col items-center mb-2">
           <div>
             <FormattedLink
-              href="mailto:info@zocapet.com"
+              href={ExternalLinks[ExternalLinkNames.EMAIL_ZOCAPET]}
               title="Contact ZoCa Pet"
               newTab
             >

@@ -6,22 +6,27 @@ const Development: React.FC = () => {
       <div className="skew-y-2">
         <div className="text-3xl text-right mr-6">Software Development</div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row w-full justify-around mt-10 items-center">
-          <Panel>
-            <div className="text-xl">Software Engineer</div>
-            <div>Electronic Financial Group</div>
-            <div className="text-sm">1999-2003</div>
-          </Panel>
-          <Panel>
-            <div className="text-xl">Independent Contractor</div>
-            <div>Waco & Austin, TX</div>
-            <div className="text-sm">2003-2016</div>
-            <div className="text-sm">2023-Present</div>
-          </Panel>
-          <Panel>
-            <div className="text-xl">Senior Software Engineer</div>
-            <div>Volusion</div>
-            <div className="text-sm">2016-2023</div>
-          </Panel>
+          <Panel
+            title="Software Engineer"
+            subTitle="Electronic Financial Group"
+            information="1999-2003"
+          />
+          <Panel
+            title="Independent Contractor"
+            subTitle="Waco & Austin, TX"
+            information={
+              <div>
+                2003-2016
+                <br />
+                2003-Present
+              </div>
+            }
+          />
+          <Panel
+            title="Senior Software Engineer"
+            subTitle="Volusion"
+            information="2016-2023"
+          />
         </div>
       </div>
     </div>

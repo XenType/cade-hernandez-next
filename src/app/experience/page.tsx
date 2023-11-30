@@ -1,9 +1,10 @@
 import FormattedLink from "@/components/content/common/formatted-link";
 import Attention from "../../components/content/common/attention";
-import Panel from "../../components/content/common/panel";
 import Education from "@/components/content/experience/education";
 import Development from "@/components/content/experience/development";
 import NonTech from "@/components/content/experience/non-tech";
+import { ExternalLinks } from "@/components/constants";
+import { ExternalLinkNames } from "@/components/enum";
 
 const ExperienceContent: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const ExperienceContent: React.FC = () => {
           <Attention />
         </div>
         <FormattedLink
-          href="https://drive.google.com/file/d/1Zt75IxkleDjLWaQeb6HgyZulwsb3sCSB/view?usp=sharing"
+          href={ExternalLinks[ExternalLinkNames.RESUME]}
           title="My Resume"
           newTab
         >
