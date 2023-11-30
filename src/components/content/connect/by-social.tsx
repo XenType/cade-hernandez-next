@@ -1,4 +1,6 @@
+import { ExternalLinks } from "@/components/constants";
 import FormattedLink from "../common/formatted-link";
+import { ExternalLinkNames } from "@/components/enum";
 
 const BySocial: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const BySocial: React.FC = () => {
         <div className="flex flex-col items-center mb-2 md:mt-4">
           <div>
             <FormattedLink
-              href="https://www.FormattedLinkedin.com/in/cade-hernandez-9a9572264"
+              href={ExternalLinks[ExternalLinkNames.LINKEDIN]}
               title="FormattedLinked In"
               newTab
             >
@@ -22,7 +24,7 @@ const BySocial: React.FC = () => {
         <div className="flex flex-col items-center mb-2">
           <div>
             <FormattedLink
-              href="https://instagram.com/c_cade_hernandez?igshid=OGQ5ZDc2ODk2ZA=="
+              href={ExternalLinks[ExternalLinkNames.INSTAGRAM]}
               title="Instagram"
               newTab
             >

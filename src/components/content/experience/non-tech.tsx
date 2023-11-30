@@ -6,33 +6,44 @@ const NonTech: React.FC = () => {
       <div className="-skew-y-2">
         <div className="text-3xl">Outside of Engineering</div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:items-start md:h-[225px] md:flex-wrap md:flex-row w-full justify-around mt-10 items-center">
-          <Panel>
-            <div className="text-lg">Game Master</div>
-            <div className="text-sm">Blizzard Entertainment - Austin TX</div>
-          </Panel>
-          <Panel>
-            <div className="text-lg">Painting & Print Framing</div>
-            <div className="text-sm">Frames, Etc - Waco TX</div>
-          </Panel>
-          <Panel>
-            <div className="text-lg">Event Coordinator</div>
-            <div className="text-sm">Dagar's Catering - Austin TX</div>
-          </Panel>
-          <Panel>
-            <div className="text-lg">Trainer</div>
-            <div className="text-sm">Dagar's Catering - Austin TX</div>
-            <div className="text-sm">Blizzard Entertainment - Austin TX</div>
-            <div className="text-sm">Volusion - Austin TX</div>
-          </Panel>
-          <Panel>
-            <div className="text-lg">Assistant Manager</div>
-            <div className="text-sm">1431 Cafe - Cedar Park TX</div>
-          </Panel>
-          <Panel>
-            <div className="text-lg">Customer Support</div>
-            <div className="text-sm">Volusion - Austin TX</div>
-            <div className="text-sm">Blizzard Entertainment - Austin TX</div>
-          </Panel>
+          <Panel
+            title="Game Master"
+            information="Blizzard Entertainment - Austin TX"
+          />
+          <Panel
+            title="Painting & Print Framing"
+            information="Frames, Etc - Waco TX"
+          />
+          <Panel
+            title="Event Coordinator"
+            information="Dagar's Catering - Austin TX"
+          />
+          <Panel
+            title="Trainer"
+            information={
+              <div>
+                Volusion - Austin TX
+                <br />
+                Dagar's Catering - Austin TX
+                <br />
+                Blizzard Entertainment - Austin TX
+              </div>
+            }
+          />
+          <Panel
+            title="Assistant Manager"
+            information="1431 Cafe - Cedar Park TX"
+          />
+          <Panel
+            title="Customer Support"
+            information={
+              <div>
+                Volusion - Austin TX
+                <br />
+                Blizzard Entertainment - Austin TX
+              </div>
+            }
+          />
         </div>
       </div>
     </div>
