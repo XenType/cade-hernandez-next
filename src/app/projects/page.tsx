@@ -31,16 +31,16 @@ const ProjectsContent: React.FC = () => {
                 goal. Expected launch in early 2024.
               </ProjectItem>
               <hr className="border-white border-1" />
-              <ProjectItem type="website" title="ZoCa Pet">
+              <ProjectItem type="website" title="ZoCa AI Studio">
                 <div>
                   A collaborative project allowing me to use years of e-commerce
                   experience to generate passive income. Visit us at{" "}
                   <FormattedLink
-                    href={ExternalLinks[ExternalLinkNames.ZOCAPET]}
-                    title="ZoCa Pet Store"
+                    href={ExternalLinks[ExternalLinkNames.ZOCAAISTUDIO]}
+                    title="ZoCa AI Studio"
                     newTab
                   >
-                    www.zocapet.com
+                    www.zoca-aistudio.com
                   </FormattedLink>
                   . We are online and will be starting up our marketing
                   campaigns soon!
