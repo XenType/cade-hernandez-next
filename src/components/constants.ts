@@ -6,7 +6,7 @@ const ExternalLinks = {
   [ExternalLinkNames.GITHUB]: "https://github.com/XenType",
   [ExternalLinkNames.LINKEDIN]:
     "https://www.linkedin.com/in/cade-hernandez-9a9572264",
-  [ExternalLinkNames.ZOCAPET]: "https://www.zocapet.com",
+  [ExternalLinkNames.ZOCAAISTUDIO]: "https://www.zoca-aistudio.com",
   [ExternalLinkNames.WEBSITE_SOURCE]:
     "https://github.com/XenType/cade-hernandez-next",
   [ExternalLinkNames.ZEEPBOP_SOURCE]: "https://github.com/XenType/RunZeepBop",
@@ -17,7 +17,7 @@ const ExternalLinks = {
     "https://www.npmjs.com/package/test-logic",
   [ExternalLinkNames.EMAIL_PERSONAL]: "mailto:c.cade.hernandez@gmail.com",
   [ExternalLinkNames.EMAIL_PROFESSIONAL]: "mailto:info@cadehernandez.com",
-  [ExternalLinkNames.EMAIL_ZOCAPET]: "mailto:info@zocapet.com",
+  [ExternalLinkNames.EMAIL_ZOCA]: "mailto:info@cadehernandez.com",
   [ExternalLinkNames.PHONE]: "tel:4154815756",
   [ExternalLinkNames.INSTAGRAM]:
     "https://instagram.com/c_cade_hernandez?igshid=OGQ5ZDc2ODk2ZA==",
