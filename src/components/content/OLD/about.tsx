@@ -1,10 +1,12 @@
+import Link from "next/link";
 import Indentation from "../common/indentation";
+import { PagePath } from "@/components/enum";
 
 const About: React.FC = () => {
   return (
-    <div className="m-auto bg-white/60 rounded-md max-w-[800px] drop-shadow-lg p-4 border border-white">
+    <div className="bg-white/60 rounded-md max-w-[800px] drop-shadow-lg p-4 border border-white">
       <div className="text-lg md:text-xl font-bold text-gray-600 mb-2">
-        About me
+        About Me
       </div>
       <div className="w-full">
         <Indentation />I grew up in a small, Texas town with not much in the way
@@ -22,6 +24,14 @@ const About: React.FC = () => {
         experience leading others comes from both tech- and non-tech-related
         industries. In all, I've built a well-rounded skill set that is very
         useful in todays internet-driven economy.
+      </div>
+      <div className="text-base font-bold text-gray-800 mt-4 mb-2">
+        OK, you have to go somewhere because this is the end of the page. How
+        about{" "}
+        <Link className="text-blue-800 underline" href={PagePath.RESUME}>
+          Experience
+        </Link>{" "}
+        for starters?
       </div>
     </div>
   );

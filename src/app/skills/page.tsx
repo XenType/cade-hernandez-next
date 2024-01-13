@@ -6,7 +6,85 @@ import Processes from "@/components/content/skills/processes";
 import Tools from "@/components/content/skills/tools";
 import { useState } from "react";
 
+// TODO: Finish this - would it be better as verticle card scroll??
+
 const SkillsContent: React.FC = () => {
+  return (
+    <div>
+      <div className="m-auto bg-white/60 rounded-md max-w-[800px] drop-shadow-lg p-4 border border-white mb-4 min-h-[325px] md:min-h-[225px]">
+        <div className="text-lg md:text-xl font-bold text-gray-600 mb-2">
+          Languages & Frameworks
+        </div>
+        <div className="flex flex-row justify-center list-none">
+          <ul className="w-full h-[225px] flex flex-row overflow-x-auto overflow-y-hidden">
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                TypeScript
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                JavaScript
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                C#
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                ASP.NET
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                ASP Classic
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                GDScript
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                Python
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                T-SQL
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                CSS
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                GraphQL
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                HTML5
+              </span>
+            </li>
+            <li className="flex flex-[0_0_200px] justify-center items-start sticky-webkit top-0 left-0">
+              <span className="absolute top-0 left-0 block h-full text-center -rotate-90">
+                XML
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SkillsContentOLD: React.FC = () => {
   enum Tabs {
     LANGUAGES,
     PROCESSES,

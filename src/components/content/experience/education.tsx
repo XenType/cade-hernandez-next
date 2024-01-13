@@ -18,9 +18,9 @@ const Education: React.FC = () => {
             information="2007-2009"
             notes={
               <div>
-                "Rather than go into debt for 15 more years, I modernized"
+                Rather than go into debt for 15 more years, I modernized
                 <br />
-                "my skillset by taking only the classes I really needed"
+                my skillset by taking only the classes I really needed.
               </div>
             }
           />

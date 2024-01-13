@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { PagePath } from "../../enum";
+import { PagePath } from "../enum";
 import Link from "next/link";
 
 interface MenuItemProps {
@@ -12,21 +12,31 @@ const MenuItem: React.FC<MenuItemProps> = ({ itemPath }) => {
   const pathName = usePathname();
   const getMenuTitle = (): string => {
     switch (itemPath) {
-      case PagePath.EXPERIENCE:
-        return "Experience";
+      case PagePath.RESUME:
+        return "Resume";
       case PagePath.SKILLS:
-        return "Skills";
+        return "About";
       case PagePath.PROJECTS:
         return "Projects";
+      case PagePath.PROJ_CAREER:
+        return "Career";
+      case PagePath.PROJ_FREELANCE:
+        return "Freelance";
+      case PagePath.PROJ_PERSONAL:
+        return "Personal";
       case PagePath.CONNECT:
         return "Connect";
     }
     return "Home";
   };
+  console.log(pathName, itemPath);
   return (
     <div
-      className={`hover:cursor-pointer hover:text-blue-700 ${
-        pathName === itemPath || pathName === "" ? "text-amber-600" : ""
+      className={`hover:cursor-pointer hover:text-cade-blue-med ${
+        pathName === itemPath ||
+        (itemPath !== "/" && pathName.startsWith(itemPath))
+          ? "text-cade-blue-med underline font-bold"
+          : "text-cade-blue-dark"
       }`}
     >
       <Link href={itemPath} title={getMenuTitle()}>
