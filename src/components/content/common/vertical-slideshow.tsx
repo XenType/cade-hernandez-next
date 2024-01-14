@@ -75,7 +75,7 @@ const VerticalSlideshow: React.FC<VerticalSlideshowProps> = ({
 }) => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-row space-x-8 overflow-x-auto pb-12 max-w-[1000px] scroll-fade snap-x">
+      <div className="flex flex-row space-x-24 overflow-x-auto pb-12 max-w-[1000px] scroll-fade snap-x">
         <div className="min-w-[180px]" />
         {slides.map((slide, index) => (
           <SlideFrame key={index + 1} position={index + 1}>

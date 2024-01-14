@@ -1,11 +1,14 @@
 import Headline from "@/components/content/common/headline";
 import VerticalSlideshow from "@/components/content/common/vertical-slideshow";
-import CareerTemplate from "@/components/content/projects/career-template";
-// TODO:
-// 1. Finish navigation (first, end, styling)
-// 2. Create a card template for projects
-// 3. Refactor into a re-usable carrosel
-// 4. Implementations / content
+import EfgChexceptProject from "@/components/content/projects/career/efg-chexcept";
+import EfgFirstFreedomProject from "@/components/content/projects/career/efg-first-freedom";
+import JenethWebinar from "@/components/content/projects/career/jeneth-webinar";
+import VolusionAutoSSL from "@/components/content/projects/career/volusion-auto-ssl";
+import VolusionCheckout from "@/components/content/projects/career/volusion-checkout";
+import VolusionEmailService from "@/components/content/projects/career/volusion-email-service";
+import VolusionPayments from "@/components/content/projects/career/volusion-payments";
+import VolusionPayPal from "@/components/content/projects/career/volusion-paypal";
+import VolusionUplift from "@/components/content/projects/career/volusion-uplift";
 
 const CareerProjectsPage: React.FC = () => {
   return (
@@ -16,24 +19,15 @@ const CareerProjectsPage: React.FC = () => {
         </Headline>
         <VerticalSlideshow
           slides={[
-            <CareerTemplate
-              projectTitle="Test Title"
-              company="Test Company"
-              position="Test Position"
-              details="Some details about this project will be here. Some details about this project will be here.  Some details about this project will be here.  Some details about this project will be here.  Some details about this project will be here.  Some details about this project will be here.  Some details about this project will be here. Some details about this project will be here. Some details about this project will be here. Some details about this project will be here. Some details about this project will be here. Some details about this project will be here. Some details about this project will be here. Some details about this project will be here."
-              href="https://www.google.com"
-              skillList={[
-                "skill1",
-                "tech1",
-                "skill2",
-                "skill3",
-                "skill4",
-                "tech2",
-              ]}
-            />,
-            <div>Test2</div>,
-            <div>Test3</div>,
-            <div>Test4</div>,
+            <EfgFirstFreedomProject />,
+            <EfgChexceptProject />,
+            <JenethWebinar />,
+            <VolusionUplift />,
+            <VolusionAutoSSL />,
+            <VolusionCheckout />,
+            <VolusionPayPal />,
+            <VolusionEmailService />,
+            <VolusionPayments />,
           ]}
         />
       </div>
