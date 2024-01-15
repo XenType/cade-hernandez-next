@@ -8,6 +8,7 @@ const ZocaWebsite: React.FC = () => {
       buttonText="Visit"
       href="https://zoca-aistudio.com"
       skillList={["HTML", "CSS", "JavaScript"]}
+      isActive
     >
       <div className="flex flex-col space-y-2 w-full">
         <div>

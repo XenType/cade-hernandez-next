@@ -41,9 +41,9 @@ const SlideshowNavigation: React.FC<SlideshowNavigationProps> = ({
     }
   };
   return (
-    <div className="flex flex-row justify-center">
+    <div className="flex flex-row justify-center z-10">
       <div className="relative w-[168px]">
-        <div className="absolute bottom-6 text-white text-center flex flex-row space-x-[24px]">
+        <div className="absolute top-[550px] text-white text-center flex flex-row space-x-[24px]">
           <FirstPageIcon
             className="cursor-pointer"
             onClick={() => goToSlide(1)}
@@ -74,8 +74,9 @@ const VerticalSlideshow: React.FC<VerticalSlideshowProps> = ({
   slides = [],
 }) => {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row space-x-24 overflow-x-auto pb-12 max-w-[1000px] scroll-fade snap-x">
+    <div className="flex flex-col w-full h-full">
+      <SlideshowNavigation slideCount={slides.length} />
+      <div className="flex flex-row space-x-24 overflow-x-auto pb-12 max-w-[1000px] scroll-fade snap-x scroll-smooth h-full w-full">
         <div className="min-w-[180px]" />
         {slides.map((slide, index) => (
           <SlideFrame key={index + 1} position={index + 1}>
@@ -84,7 +85,6 @@ const VerticalSlideshow: React.FC<VerticalSlideshowProps> = ({
         ))}
         <div className="min-w-[180px]" />
       </div>
-      <SlideshowNavigation slideCount={slides.length} />
     </div>
   );
 };

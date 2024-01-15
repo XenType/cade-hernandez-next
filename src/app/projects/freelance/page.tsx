@@ -1,29 +1,37 @@
 import Headline from "@/components/content/common/headline";
 import VerticalSlideshow from "@/components/content/common/vertical-slideshow";
 import CourtWebsite from "@/components/content/projects/freelance/court-website";
+import DagarsInventory from "@/components/content/projects/freelance/dagars-inventory";
 import GlactWebsite from "@/components/content/projects/freelance/glact-website";
+import FreelanceIntro from "@/components/content/projects/freelance/intro";
 import JenethWebinars from "@/components/content/projects/freelance/jeneth-webinars";
 import JenethWebsite from "@/components/content/projects/freelance/jeneth-website";
 import KmcbWebsite from "@/components/content/projects/freelance/kmcb-website";
+import ThisWebsite from "@/components/content/projects/freelance/this-website";
 import ZocaWebsite from "@/components/content/projects/freelance/zoca-website";
 
 const FreelanceProjectsPage: React.FC = () => {
   return (
     <div className="w-full h-full bg-cade-blue-dark flex flex-col px-16">
-      <div className="flex flex-col m-auto mt-20 space-y-14">
+      <div className="flex flex-col h-full mt-20 space-y-14">
         <Headline className="text-center text-6xl text-white">
           Freelance Projects
         </Headline>
-        <VerticalSlideshow
-          slides={[
-            <GlactWebsite />,
-            <CourtWebsite />,
-            <KmcbWebsite />,
-            <JenethWebsite />,
-            <JenethWebinars />,
-            <ZocaWebsite />,
-          ]}
-        />
+        <div className="flex h-full grow">
+          <VerticalSlideshow
+            slides={[
+              <FreelanceIntro />,
+              <ThisWebsite />,
+              <GlactWebsite />,
+              <CourtWebsite />,
+              <KmcbWebsite />,
+              <JenethWebsite />,
+              <JenethWebinars />,
+              <DagarsInventory />,
+              <ZocaWebsite />,
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

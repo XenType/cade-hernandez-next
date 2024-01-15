@@ -11,10 +11,10 @@ const GlactWebsite: React.FC = () => {
     >
       <div className="flex flex-col space-y-2 w-full">
         <div>
-          When I first started working as a freelance website designer, I looked
-          to my community for organizations that could benefit from an online
-          presence. This and the next 3 projects were done pro-bono as a way to
-          showcase my talent and attract paying clients.
+          This website (as well as the others I created for non-profits) was
+          created by building a basic framework in Dreamweaver then enhancing
+          the scripts and behaviors as needed. I also managed their domain and
+          hosting as well as providing a new design twice / year.
         </div>
         <div>
           The Gay and Lesbian Alliance of Central Texas provided resources

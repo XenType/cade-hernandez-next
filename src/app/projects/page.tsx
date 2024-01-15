@@ -32,6 +32,9 @@ const ProjectsPage: React.FC = () => {
               <Indentation spaces={2} />
               While a good deal less complex, I've enjoyed many of my freelance
               projects because they allow for a bit more creativity and freedom.
+              These are just some of the small projects I've worked on over the
+              years - the hightights and projects in which I had invested
+              interest.
             </div>
             <div className="flex">
               <LinkButton href={PagePath.PROJ_FREELANCE}>
@@ -41,9 +44,10 @@ const ProjectsPage: React.FC = () => {
           </div>
           <div className="w-full flex flex-row justify-between border-2 border-cade-blue-lite p-4 rounded-xl shadow-md shadow-cade-blue-lite">
             <div className="text-white max-w-[600px]">
-              <Indentation spaces={2} />
-              Some longer text on this side. It might wrap or might not. Some
-              longer text on this side. It might wrap or might not.
+              <Indentation spaces={2} />I love taking on new personal projects,
+              even if it only serves to learn something new. I've collected some
+              examples from unit testing tools to a game I created as I learned
+              how to use Godot 4. Please have a look!
             </div>
             <div className="flex">
               <LinkButton href={PagePath.PROJ_PERSONAL}>

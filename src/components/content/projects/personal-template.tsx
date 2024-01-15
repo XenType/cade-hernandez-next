@@ -1,40 +1,44 @@
-import Attention from "../common/attention";
 import LinkButton from "../common/link-button";
 import PillTag from "../common/pill-tag";
 import ActiveProject from "./career/active-project";
 
-interface FreelanceTemplateProps {
-  title: React.ReactNode;
-  buttonText?: string;
-  href?: string;
+interface PersonalTemplateProps {
+  projectTitle: string;
+  buttonText1?: string;
+  href1?: string;
+  buttonText2?: string;
+  href2?: string;
   year?: string;
+  subtitle: string;
   children: React.ReactNode;
   skillList: React.ReactNode[];
   isActive?: boolean;
+  thumbnail?: React.ReactNode;
 }
 
-const FreelanceTemplate: React.FC<FreelanceTemplateProps> = ({
-  title: organization,
-  buttonText = "View",
-  href,
+const PersonalTemplate: React.FC<PersonalTemplateProps> = ({
+  projectTitle,
+  buttonText1 = "View",
+  href1,
+  buttonText2 = "View",
+  href2,
   year,
+  subtitle,
   children,
   skillList,
-  isActive = false,
+  isActive,
+  thumbnail,
 }) => {
   return (
-    <div className="flex flex-col space-y-6 w-full h-full">
+    <div className="flex flex-col space-y-4 w-full h-full">
       <div className="flex flex-row w-full">
         <div className="flex flex-col space-y-2 text-cade-blue-dark grow">
-          <div className="text-3xl font-bold">{organization}</div>
+          <div className="text-3xl font-bold">{projectTitle}</div>
+          <div className="pl-2 text-xl">{subtitle}</div>
         </div>
-        {href ? (
-          <LinkButton href={href} target="_blank">
-            {buttonText}
-          </LinkButton>
-        ) : null}
+        {thumbnail ?? null}
       </div>
-      <div className="flex flex-col w-full border-2 border-gray-400 bg-white h-full py-4 px-8 space-y-4">
+      <div className="flex flex-col w-full border-2 border-gray-400 bg-white h-full py-6 px-8 space-y-4">
         <div className="flex flex-row justify-between">
           {isActive ? <ActiveProject /> : null}
 
@@ -53,8 +57,20 @@ const FreelanceTemplate: React.FC<FreelanceTemplateProps> = ({
           ))}
         </div>
       </div>
+      <div className="flex flex-row justify-around">
+        {href1 ? (
+          <LinkButton href={href1} target="_blank">
+            {buttonText1}
+          </LinkButton>
+        ) : null}
+        {href2 ? (
+          <LinkButton href={href2} target="_blank">
+            {buttonText2}
+          </LinkButton>
+        ) : null}
+      </div>
     </div>
   );
 };
 
-export default FreelanceTemplate;
+export default PersonalTemplate;
