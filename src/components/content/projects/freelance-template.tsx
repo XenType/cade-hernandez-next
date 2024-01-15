@@ -1,24 +1,20 @@
 import LinkButton from "../common/link-button";
 import PillTag from "../common/pill-tag";
 
-interface CareerTemplateProps {
-  projectTitle: string;
-  company: React.ReactNode;
+interface FreelanceTemplateProps {
+  title: React.ReactNode;
   buttonText?: string;
   href?: string;
   year?: string;
-  position: string;
   children: React.ReactNode;
   skillList: React.ReactNode[];
 }
 
-const CareerTemplate: React.FC<CareerTemplateProps> = ({
-  projectTitle,
-  company,
+const FreelanceTemplate: React.FC<FreelanceTemplateProps> = ({
+  title: organization,
   buttonText = "View",
   href,
   year,
-  position,
   children,
   skillList,
 }) => {
@@ -26,8 +22,7 @@ const CareerTemplate: React.FC<CareerTemplateProps> = ({
     <div className="flex flex-col space-y-6 w-full h-full">
       <div className="flex flex-row w-full">
         <div className="flex flex-col space-y-2 text-cade-blue-dark grow">
-          <div className="text-3xl font-bold">{projectTitle}</div>
-          <div className="pl-2 text-xl">{company}</div>
+          <div className="text-3xl font-bold">{organization}</div>
         </div>
         {href ? (
           <LinkButton href={href} target="_blank">
@@ -36,8 +31,7 @@ const CareerTemplate: React.FC<CareerTemplateProps> = ({
         ) : null}
       </div>
       <div className="flex flex-col w-full border-2 border-gray-400 bg-white h-full py-6 px-8 space-y-4">
-        <div className="flex flex-row justify-between">
-          <div className="text-lg text-gray-800 font-bold">{position}</div>
+        <div className="flex flex-row justify-end">
           {year ? (
             <div className="italic font-semibold text-xs text-gray-700 pr-2">
               {year}
@@ -57,4 +51,4 @@ const CareerTemplate: React.FC<CareerTemplateProps> = ({
   );
 };
 
-export default CareerTemplate;
+export default FreelanceTemplate;

@@ -6,7 +6,7 @@ const JenethWebinar: React.FC = () => {
       projectTitle="Brandable Webinar Portal"
       company="Jeneth, LLC"
       position="Project Developer"
-      year="2012"
+      year="2012-2013"
       skillList={["PHP", "MySQL", "HTML", "CSS", "JavaScript"]}
       href="https://web.archive.org/web/20120115002751/http://online.jeneth.com/"
       buttonText="Go 'Wayback'"
