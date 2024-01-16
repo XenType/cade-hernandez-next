@@ -1,14 +1,14 @@
-import ListItem from './list-item';
+import ListItem from "./list-item";
 
 const Processes: React.FC = () => {
   return (
     <div className="p-4 text-lg flex flex-row flex-wrap justify-around">
       <ListItem>Object-Oriented Programming</ListItem>
-      <ListItem>CI / CD</ListItem>
       <ListItem>Distributed Systems</ListItem>
+      <ListItem>Agile</ListItem>
+      <ListItem>CI / CD</ListItem>
       <ListItem>Test Driven Development</ListItem>
       <ListItem>Microservice Architecture</ListItem>
-      <ListItem>Agile</ListItem>
       <ListItem>RESTful API Design</ListItem>
       <ListItem>SCRUM</ListItem>
       <ListItem>Design Patterns</ListItem>

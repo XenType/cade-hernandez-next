@@ -59,6 +59,24 @@
   position: sticky;
 }
 
+.code-background {
+  background-image: url("/images/code-bg.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.process-background {
+  background-image: url("/images/process-bg.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.environment-background {
+  background-image: url("/images/environment-bg.png");
+  background-size: contain;
+  background-position: center;
+}
+
 .scroll-fade {
   mask-image: linear-gradient(
     to right,
