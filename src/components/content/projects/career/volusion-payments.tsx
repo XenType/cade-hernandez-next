@@ -7,8 +7,8 @@ const VolusionPayments: React.FC = () => {
       company="Volusion LLC"
       buttonText="Feature Page"
       href="https://volusion.com/payments/volusion-payments-stripe/"
-      position="Senior Developer"
-      year="2022"
+      position="Technical Lead"
+      year="2023"
       skillList={[
         "ASP Classic",
         "T-SQL",

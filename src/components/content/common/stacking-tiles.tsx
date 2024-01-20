@@ -9,16 +9,16 @@ interface StackingTilesProps {
 
 const StackingTiles: React.FC<StackingTilesProps> = ({ tileList }) => {
   return (
-    <div className="bg-gray-700 grow flex flex-row items-center overflow-x-auto border-2 border-cade-blue-dark">
+    <div className="bg-gray-700 grow flex flex-row items-center overflow-x-auto border-2 border-cade-blue-dark scroll-smooth">
       {tileList.map(({ title, content }, index) => (
         <div
-          className="sticky relative bg-cade-blue-dark h-[250px] min-w-[250px] flex flex-col justify-center"
+          className="sticky relative bg-cade-blue-dark h-[250px] min-w-[250px] flex flex-col justify-center border-[1px] border-cade-blue-med"
           key={title}
           style={{ left: index * 30 }}
         >
           <div className="flex flex-row h-full">
             <div
-              className="transform rotate-180 text-center p-[3px] font-semibold text-cade-blue-lite"
+              className="transform rotate-180 text-center p-[3px] font-semibold text-white"
               style={{ writingMode: "vertical-lr" }}
             >
               {title}

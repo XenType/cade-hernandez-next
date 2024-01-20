@@ -29,10 +29,7 @@ const VolusionEmailService: React.FC = () => {
         <div>
           Using a modern tech stack, the team built and deployed a scalable and
           reliable email queueing system that was able to quickly hydrate email
-          templates and forward them to a an external provider. I served
-          double-duty during this project: supervising development and mentoring
-          the junior members of the team while also contributing to the Volusion
-          Payments project (next).
+          templates and forward them to a an external provider.
         </div>
         <div className="text-xs text-center">
           ** See the new template editing flow in the documentation link above.

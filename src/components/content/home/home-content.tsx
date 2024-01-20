@@ -52,14 +52,14 @@ const HomeContent: React.FC = () => {
             </ActionButton>
             <ActionButton onClick={handleExploreClick}>Explore</ActionButton>
           </div>
+          {pageState === PageState.COLLABORATE ? <CollaborateContent /> : null}
+          {pageState === PageState.EXPLORE ? <ExploreContent /> : null}
         </div>
         <div className="relative h-[400px] w-[300px]">
           <div className="bg-cade-blue-lite h-[375px] w-[275px] absolute bottom-0 right-0 rounded-2xl" />
           <div className="cade-image-bg h-[375px] w-[275px] overflow-hidden rounded-2xl absolute" />
         </div>
       </div>
-      {pageState === PageState.COLLABORATE ? <CollaborateContent /> : null}
-      {pageState === PageState.EXPLORE ? <ExploreContent /> : null}
     </div>
   );
 };

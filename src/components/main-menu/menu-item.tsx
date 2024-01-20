@@ -29,7 +29,6 @@ const MenuItem: React.FC<MenuItemProps> = ({ itemPath }) => {
     }
     return "Home";
   };
-  console.log(pathName, itemPath);
   return (
     <div
       className={`hover:cursor-pointer hover:text-cade-blue-med ${

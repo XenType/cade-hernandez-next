@@ -14,7 +14,7 @@ import VolusionUplift from "@/components/content/projects/career/volusion-uplift
 const CareerProjectsPage: React.FC = () => {
   return (
     <div className="w-full h-full bg-cade-blue-dark flex flex-col px-16">
-      <div className="flex flex-col h-full mt-20 space-y-14">
+      <div className="flex flex-col w-full h-full mt-20 space-y-14">
         <Headline className="text-center text-6xl text-white">
           Career Projects
         </Headline>

@@ -23,8 +23,8 @@ const IntroSkills: React.FC = () => {
             EXPLORE the skills & certifications I've picked up, including:
           </span>
           <ul className="list-disc pl-12 pt-2">
-            <li>IBM Artifical Intellegence Foundations Certification</li>
-            <li>Artificial Intellegence Modeling</li>
+            <li>IBM Artifical intelligence Foundations Certification</li>
+            <li>Artificial intelligence Modeling</li>
             <li>Cloud Engineering & Infrastructure from Code</li>
             <li>Project Planning</li>
             <li>And of course, a large list of programming languages!</li>

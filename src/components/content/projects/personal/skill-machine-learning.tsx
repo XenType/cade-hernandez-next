@@ -9,13 +9,13 @@ const SkillMachineLearning: React.FC = () => {
       year="2024"
       buttonText1="View Ciriculum"
       href1="https://www.cloudskillsboost.google/paths/17?utm_source=cgc&utm_medium=website&utm_campaign=evergreen"
-      skillList={["Artificial Intellegence", "Machine Learning"]}
+      skillList={["Artificial intelligence", "Machine Learning"]}
       thumbnail={<ThumbGoogleAi />}
       isActive
     >
       <div className="flex flex-col space-y-2 w-full">
         <div>
-          The field of Artificial Intellegence is quickly growing and it is
+          The field of Artificial intelligence is quickly growing and it is
           exciting to finally gain direct access to AI building tools provided
           by the world's leading tech companies.
         </div>

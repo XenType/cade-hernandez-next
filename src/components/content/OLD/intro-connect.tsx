@@ -13,7 +13,7 @@ const IntroConnect: React.FC = () => {
         <div>
           <Indentation />
           Looking for a freelance developer? Full-time software engineer or
-          manager? Have a question about Artificial Intellegence or want to
+          manager? Have a question about Artificial intelligence or want to
           collaborate on a project?
         </div>
         <div>
