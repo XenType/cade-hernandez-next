@@ -102,11 +102,11 @@ const ResumeExperience: React.FC = () => {
               endYear={endYearState}
             />
           ) : (
-            <div className="flex flex-col space-y-4 items-center grow min-w-[800px] min-h-[350px] bg-white rounded-lg shadow shadow-cade-blue-dark/20 py-4 px-2 mb-4">
-              <div className="pt-2 text-lg font-semibold">
+            <div className="flex flex-col space-y-1 xl:space-y-4 items-center grow min-w-[800px] bg-white rounded-lg shadow shadow-cade-blue-dark/20 py-4 px-2 mb-4">
+              <div className="pt xl:pt-2 xl:text-lg font-semibold">
                 Experience That Spans Three Career Paths
               </div>
-              <div className="p-2 max-w-[600px] flex flex-col space-y-2 text-sm">
+              <div className="p-2 max-w-[600px] flex flex-col space-y-2 text-xs xl:text-sm">
                 <p className="font-semibold">But why?</p>
                 <p className="text-justify">
                   While successful in a number of projects in my first role as
@@ -139,7 +139,7 @@ const ResumeExperience: React.FC = () => {
                   employment.
                 </p>
               </div>
-              <div className="text-sm font-semibold text-cade-blue-dark">
+              <div className="text-xs xl:text-sm font-semibold text-cade-blue-dark">
                 Please select a career path above to view a timeline of
                 positions held in those industries.
               </div>

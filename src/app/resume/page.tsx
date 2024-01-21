@@ -2,6 +2,7 @@ import Attention from "@/components/content/common/attention";
 import LinkButton from "@/components/content/common/link-button";
 import StackingPanels from "@/components/content/common/stacking-panels";
 import ResumeCertifications from "@/components/content/resume/certifications";
+import ResumeEducation from "@/components/content/resume/education";
 import ResumeExperience from "@/components/content/resume/experience";
 import ResumeSkills from "@/components/content/resume/skills";
 import ResumeSummary from "@/components/content/resume/summary";
@@ -45,7 +46,7 @@ const ResumePage: React.FC = () => {
             },
             {
               title: "Education",
-              content: <div className="min-h-[525px]">content</div>,
+              content: <ResumeEducation />,
             },
           ]}
         />

@@ -7,6 +7,7 @@ enum PagePath {
   RESUME = "/resume",
   SKILLS = "/skills",
   CONNECT = "/connect",
+  ABOUT = "/about",
 }
 
 enum ExternalLinkNames {

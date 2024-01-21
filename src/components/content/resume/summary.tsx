@@ -2,7 +2,7 @@ import Indentation from "../common/indentation";
 
 const ResumeSummary: React.FC = () => {
   return (
-    <div className="m-auto max-w-[1000px] h-full rounded-md py-4 px-8 flex flex-col space-y-4 text-lg text-justify text-black font-semibold">
+    <div className="m-auto max-w-[1000px] h-full rounded-md py-4 px-8 flex flex-col space-y-4 text-base xl:text-lg text-justify text-black font-semibold">
       <div>
         <Indentation spaces={3} />I am an exceptional candidate for both{" "}
         <span className="underline decoration-cade-blue-med decoration-2">

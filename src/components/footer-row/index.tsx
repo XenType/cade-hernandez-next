@@ -7,7 +7,7 @@ import { ExternalLinkNames } from "../enum";
 
 const FooterRow: React.FC = () => {
   return (
-    <div className="flex flex-row justify-between items-center bottom-0 w-full text-center bg-white text-gray-500 p-2 z-10">
+    <div className="flex flex-row justify-between items-center bottom-0 w-full text-center bg-white text-gray-500 px-2 xl:py-2 z-10">
       <div className="text-xs text-cade-blue-dark">
         Copyright 2023 - 2024 C. Cade Hernandez
       </div>

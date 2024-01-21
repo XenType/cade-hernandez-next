@@ -2,16 +2,13 @@ import Headline from "@/components/content/common/headline";
 import Indentation from "@/components/content/common/indentation";
 import LinkButton from "@/components/content/common/link-button";
 import { PagePath } from "@/components/enum";
-import { Anybody } from "next/font/google";
-
-const anybody = Anybody({ subsets: ["latin"] });
 
 const ProjectsPage: React.FC = () => {
   return (
     <div className="w-full h-full bg-cade-blue-dark flex px-16">
-      <div className="m-auto mt-20 w-full max-w-[1000px] p-4">
+      <div className="m-auto mt-8 xl:mt-20 w-full max-w-[1000px] p-4">
         <div className="w-full h-full flex flex-col space-y-10">
-          <Headline className="text-white font-semibold text-5xl text-center">
+          <Headline className="text-white font-semibold text-3xl xl:text-5xl text-center">
             Discover Projects by Category
           </Headline>
           <div className="w-full flex flex-row justify-between border-2 border-cade-blue-lite p-4 rounded-xl shadow-md shadow-cade-blue-lite">

@@ -74,7 +74,7 @@ const VerticalSlideshow: React.FC<VerticalSlideshowProps> = ({
   slides = [],
 }) => {
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col w-full h-full items-center">
       <SlideshowNavigation slideCount={slides.length} />
       <div className="flex flex-row space-x-24 overflow-x-auto pb-12 max-w-[1000px] scroll-fade snap-x scroll-smooth h-full w-full">
         <div className="min-w-[180px]" />

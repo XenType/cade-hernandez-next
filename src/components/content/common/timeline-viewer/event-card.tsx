@@ -31,13 +31,13 @@ const EventCard: React.FC<EventCardProps> = ({
 
   return (
     <div
-      className="bg-white rounded-md w-full p-2 cursor-pointer hover:outline hover:outline-cade-blue-med z-5"
+      className="bg-white rounded-md w-full py-1 px-2 xl:p-2 cursor-pointer hover:outline hover:outline-cade-blue-med z-5"
       onClick={() => handleEventCardClick()}
     >
-      <div className="flex flex-col h-full space-y-4">
+      <div className="flex flex-col h-full">
         <div className="flex flex-row justify-between items-center">
-          <div className="font-semibold">{title}</div>
-          <div className="text-sm">{startYear}</div>
+          <div className="text-xs xl:text-base font-semibold">{title}</div>
+          <div className="text-xs xl:text-base">{startYear}</div>
         </div>
       </div>
     </div>

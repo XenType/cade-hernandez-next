@@ -14,7 +14,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ itemPath }) => {
     switch (itemPath) {
       case PagePath.RESUME:
         return "Resume";
-      case PagePath.SKILLS:
+      case PagePath.ABOUT:
         return "About";
       case PagePath.PROJECTS:
         return "Projects";

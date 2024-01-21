@@ -21,7 +21,7 @@ const MainMenu: React.FC = () => {
       <div className="flex flex-col justify-center w-full">
         <div className="hidden md:flex flex-row space-x-8 xl:space-x-20 w-full justify-end">
           <MenuItem itemPath={PagePath.CONNECT} />
-          <MenuItem itemPath={PagePath.SKILLS} />
+          <MenuItem itemPath={PagePath.ABOUT} />
         </div>
       </div>
       <div className="md:hidden" />

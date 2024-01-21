@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-import EventGroupCard, { EventGroupCardProps } from "./event-group-card";
+import EventGroupCard from "./event-group-card";
 import EventModal from "./event-modal";
+import { useMediaQuery } from "react-responsive";
+import { SCREEN_XL } from "@/utilities/media-query-parameters";
 
 interface TimelineViewerProps {
   entries: TimelineViewerEntry[];
@@ -24,6 +25,8 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
   const [rightGroupGapHeight, setRightGroupGapHeight] = useState(0);
 
   let entryCounter = 0;
+
+  const isScreenXL = useMediaQuery(SCREEN_XL);
 
   const handleTimelineClick = (displayComponent: React.ReactNode): void => {
     setCurrentComponent(displayComponent);
@@ -54,7 +57,9 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
     });
     setLeftGroups(lGroup);
     setRightGroups(rGroup);
-    setLineSegmentHeight(Math.floor(450 / getYearRange().length));
+    setLineSegmentHeight(
+      Math.floor((isScreenXL ? 450 : 325) / getYearRange().length)
+    );
   }, [entries]);
 
   useEffect(() => {

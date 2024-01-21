@@ -77,6 +77,18 @@
   background-position: center;
 }
 
+.mcc-background {
+  background-image: url("/images/mcc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.uta-background {
+  background-image: url("/images/uta.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .scroll-fade {
   mask-image: linear-gradient(
     to right,
