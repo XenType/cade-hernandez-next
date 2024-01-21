@@ -1,5 +1,5 @@
 const ServiceCareerTimeline: TimelineConfiguration = {
-  key: "service",
+  key: "Service",
   startYear: 2003,
   endYear: 2016,
   timelineEntries: [

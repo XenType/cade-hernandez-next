@@ -4,8 +4,7 @@ import { useState } from "react";
 import TimelineViewer from "../../common/timeline-viewer";
 import EngineeringCareerTimeline from "./engineering-career";
 import ServiceCareerTimeline from "./service-career";
-
-type CareerPath = "Engineering" | "Service" | "Support";
+import SupportCareerTimeline from "./support-career";
 
 const BLANK_CONFIG: TimelineConfiguration = {
   key: "",
@@ -15,7 +14,9 @@ const BLANK_CONFIG: TimelineConfiguration = {
 };
 
 const ResumeExperience: React.FC = () => {
-  const [entryKeyState, setEntryKeyState] = useState<string>(BLANK_CONFIG.key);
+  const [entryKeyState, setEntryKeyState] = useState<CareerPath | "">(
+    BLANK_CONFIG.key
+  );
   const [startYearState, setStartYearState] = useState<number>(
     BLANK_CONFIG.startYear
   );
@@ -27,7 +28,7 @@ const ResumeExperience: React.FC = () => {
   );
 
   const setTimelineInState = (
-    key: string,
+    key: CareerPath | "",
     start: number,
     end: number,
     list: TimelineViewerEntry[]
@@ -45,7 +46,7 @@ const ResumeExperience: React.FC = () => {
       case "Service":
         return ServiceCareerTimeline;
       case "Support":
-        return EngineeringCareerTimeline; // update
+        return SupportCareerTimeline;
     }
   };
 
@@ -56,42 +57,95 @@ const ResumeExperience: React.FC = () => {
   };
 
   return (
-    <div className="max-w-[1000px] m-auto flex flex-col h-full">
-      <div className="w-full flex flex-row justify-center text-center text-lg font-bold p-2">
-        <div
-          className={`w-4/12 cursor-pointer text-cade-blue-dark`}
-          onClick={() => applyTimeline("Engineering")}
-        >
-          Career: Engineering
-        </div>
-        <div
-          className={`w-4/12 cursor-pointer text-cade-blue-dark`}
-          onClick={() => applyTimeline("Service")}
-        >
-          Career: Service
-        </div>
-        <div
-          className={`w-4/12 cursor-pointer text-cade-blue-dark`}
-          onClick={() => applyTimeline("Support")}
-        >
-          Career: Support
-        </div>
-      </div>
-      <div className="flex flex-col h-full py-2 items-center justify-center grow">
-        {entryKeyState &&
-        entryListState.length &&
-        startYearState &&
-        endYearState ? (
-          <TimelineViewer
-            entries={entryListState}
-            startYear={startYearState}
-            endYear={endYearState}
-          />
-        ) : (
-          <div className="flex grow m-auto">
-            Experience from three career paths summary.
+    <div className="flex w-full bg-cade-blue-dark/10">
+      <div className="max-w-[1000px] m-auto flex flex-col h-full">
+        <div className="w-full flex flex-row justify-center text-center text-lg font-bold p-2">
+          <div
+            className={`w-4/12 cursor-pointer ${
+              entryKeyState === "Engineering"
+                ? "text-cade-blue-dark underline"
+                : "text-cade-blue-dark/80"
+            }`}
+            onClick={() => applyTimeline("Engineering")}
+          >
+            Career: Engineering
           </div>
-        )}
+          <div
+            className={`w-4/12 cursor-pointer ${
+              entryKeyState === "Service"
+                ? "text-cade-blue-dark underline"
+                : "text-cade-blue-dark/80"
+            }`}
+            onClick={() => applyTimeline("Service")}
+          >
+            Career: Service
+          </div>
+          <div
+            className={`w-4/12 cursor-pointer ${
+              entryKeyState === "Support"
+                ? "text-cade-blue-dark underline"
+                : "text-cade-blue-dark/80"
+            }`}
+            onClick={() => applyTimeline("Support")}
+          >
+            Career: Support
+          </div>
+        </div>
+        <div className="flex flex-col h-full pb-2 pt-6 items-center justify-center grow">
+          {entryKeyState &&
+          entryListState.length &&
+          startYearState &&
+          endYearState ? (
+            <TimelineViewer
+              entries={entryListState}
+              startYear={startYearState}
+              endYear={endYearState}
+            />
+          ) : (
+            <div className="flex flex-col space-y-4 items-center grow min-w-[800px] min-h-[350px] bg-white rounded-lg shadow shadow-cade-blue-dark/20 py-4 px-2 mb-4">
+              <div className="pt-2 text-lg font-semibold">
+                Experience That Spans Three Career Paths
+              </div>
+              <div className="p-2 max-w-[600px] flex flex-col space-y-2 text-sm">
+                <p className="font-semibold">But why?</p>
+                <p className="text-justify">
+                  While successful in a number of projects in my first role as
+                  the leader of a small engineering team, I was young and wanted
+                  the freedoms I saw my friends enjoying. In 2003 I set out to
+                  build a client list as a freelance website developer and
+                  maintained an hourly side-job to suppliment my income.
+                </p>
+                <p className="text-justify">
+                  When I moved to Austin, TX I applied for an open Game Master
+                  position at Blizzard Entertainment's new support center. I had
+                  hopes of joining their internal tools development team, but a
+                  local team in Austin was never established.
+                </p>
+                <p className="text-justify">
+                  As website building tools became more advanced, freelance
+                  website design work became more difficult to find. I adapted,
+                  as always, and began to focus more on my service industry
+                  career. I first managed a small restaurant and eventually
+                  found myself leading large teams while working for the oldest
+                  family owned catering company in Austin.
+                </p>
+                <p className="text-justify">
+                  As much as I enjoyed over a decade of work outside of the
+                  tech-sector, I eventually felt the pull to return. I found my
+                  foothold at a SaaS company and quickly modernized my skillset
+                  to meet the output of all of my peers. A recent downsizing in
+                  staff resulted in our parting ways, but I am very appreciative
+                  of the opportunities I was given during my 7+ years of
+                  employment.
+                </p>
+              </div>
+              <div className="text-sm font-semibold text-cade-blue-dark">
+                Please select a career path above to view a timeline of
+                positions held in those industries.
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

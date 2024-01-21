@@ -21,6 +21,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
   const [leftGroups, setLeftGroups] = useState<TimelineViewerEntry[]>([]);
   const [rightGroups, setRightGroups] = useState<TimelineViewerEntry[]>([]);
   const [lineSegmentHeight, setLineSegmentHeight] = useState(0);
+  const [rightGroupGapHeight, setRightGroupGapHeight] = useState(0);
 
   let entryCounter = 0;
 
@@ -41,7 +42,6 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
 
   useEffect(() => {
     let entryCount = 0;
-
     const lGroup: TimelineViewerEntry[] = [];
     const rGroup: TimelineViewerEntry[] = [];
     entries.forEach((entry) => {
@@ -56,6 +56,14 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
     setRightGroups(rGroup);
     setLineSegmentHeight(Math.floor(450 / getYearRange().length));
   }, [entries]);
+
+  useEffect(() => {
+    if (rightGroups.length) {
+      setRightGroupGapHeight(
+        (rightGroups[0].year - startYear - 2) * lineSegmentHeight
+      );
+    }
+  }, [lineSegmentHeight, endYear, startYear]);
 
   const getLineForYear = (year: number): React.ReactNode => {
     const result = entries.some((entry) => entry.year === year) ? (
@@ -112,7 +120,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
         </div>
       </div>
       <div className="flex flex-col h-full space-y-10 items-start z-5 grow">
-        <div className="h-8" />
+        <div style={{ height: rightGroupGapHeight }} />
         {rightGroups.map(({ year, groupProps }) => (
           <EventGroupCard
             key={year}

@@ -1,5 +1,5 @@
 const EngineeringCareerTimeline: TimelineConfiguration = {
-  key: "engineering",
+  key: "Engineering",
   startYear: 1999,
   endYear: 2024,
   timelineEntries: [

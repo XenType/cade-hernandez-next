@@ -1,3 +1,5 @@
+type CareerPath = "Engineering" | "Service" | "Support";
+
 interface EventListItem {
   key: string;
   content: string;
@@ -11,6 +13,6 @@ interface TimelineViewerEntry {
 interface TimelineConfiguration {
   startYear: number;
   endYear: number;
-  key: string;
+  key: CareerPath | "";
   timelineEntries: TimelineViewerEntry[];
 }

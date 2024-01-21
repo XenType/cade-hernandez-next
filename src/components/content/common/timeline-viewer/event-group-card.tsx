@@ -16,7 +16,7 @@ const EventGroupCard: React.FC<EventGroupCardProps> = ({
   onEventClick,
 }) => {
   return (
-    <div className="bg-cade-blue-dark rounded-md shadow-lg border border-cade-blue-med shadow-cade-blue-med z-5 w-[350px] flex flex-col space-y-2 pb-2">
+    <div className="bg-cade-blue-dark rounded-md shadow-lg border border-cade-blue-med shadow-cade-blue-med/50 z-5 w-[350px] flex flex-col space-y-2 pb-2">
       <div className="flex flex-col z-5">
         <div className="flex flex-row justify-between w-full items-center text-white">
           <div className="p-2 flex flex-col">
@@ -30,7 +30,7 @@ const EventGroupCard: React.FC<EventGroupCardProps> = ({
             <EventCard
               title={title}
               startYear={startYear}
-              key={startYear}
+              key={`${startYear}-${title.substring(0, 5).replace(" ", "-")}`}
               eventList={eventList}
               onEventClick={onEventClick}
             />

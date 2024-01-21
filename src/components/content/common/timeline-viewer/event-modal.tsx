@@ -18,7 +18,7 @@ const EventModal: React.FC<EventModalProps> = ({
         !currentComponent ? "hidden" : ""
       } bg-white/50 left-0 top-0`}
     >
-      <div className="flex flex-col w-[500px] bg-white rounded-md border border-cade-blue-dark">
+      <div className="flex flex-col w-[500px] bg-white rounded-md border border-cade-blue-dark shadow-lg shadow-cade-blue-dark/50">
         <div
           className="flex flex-row justify-end p-2 cursor-pointer bg-cade-blue-dark/70"
           onClick={() => handleCloseClick()}
