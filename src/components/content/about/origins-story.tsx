@@ -1,4 +1,3 @@
-import Indentation from "../common/indentation";
 import AboutMeStoryCard from "./story-card";
 
 const AboutMeOriginStory: React.FC = () => {
@@ -6,21 +5,19 @@ const AboutMeOriginStory: React.FC = () => {
     <AboutMeStoryCard title="Origins" className="origins-background">
       <div className="flex flex-col space-y-2 md:space-y-4 xl:space-y-8 text-sm md:text-base">
         <div>
-          <Indentation />I was born in a small Texas town of about 3000 people
-          located in a dry, dusty part of the state. I lived in the country with
-          no neighbors until I was 10 when we moved inside the city limits. My
-          mom taught in the small elementary school, so a good portion of the
-          population knew who we were.
+          I was born in a small Texas town of about 3000 people located in a
+          dry, dusty part of the state. I lived in the country with no neighbors
+          until I was 10 when we moved inside the city limits. My mom taught in
+          the small elementary school, so a good portion of the population knew
+          who we were.
         </div>
         <div>
-          <Indentation />
           Our family has almost always had some sort of gaming system. I
           remember playing on an early Atari with a few games until I was 9,
           when the Nintendo Entertainment System was released. My world changed
           forever!
         </div>
         <div>
-          <Indentation />
           As far as school went, I was an "A" student throughout (
           <span className="italic">
             except in 1st grade "Handwriting" class...omg
@@ -31,7 +28,6 @@ const AboutMeOriginStory: React.FC = () => {
           and often the hardware we had was a bit dated.
         </div>
         <div>
-          <Indentation />
           As I approached 18, I yearned for a bigger city with more to do -
           movie theaters, concerts, anything! I had a small group of friends I
           met through UIL events in Waco, TX and so that is where I went...

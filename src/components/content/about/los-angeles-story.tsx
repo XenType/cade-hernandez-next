@@ -1,4 +1,3 @@
-import Indentation from "../common/indentation";
 import AboutMeStoryCard from "./story-card";
 
 const AboutMeLosAngelesStory: React.FC = () => {
@@ -6,7 +5,6 @@ const AboutMeLosAngelesStory: React.FC = () => {
     <AboutMeStoryCard title="Los Angeles Area" className="la-background">
       <div className="flex flex-col space-y-2 md:space-y-4 xl:space-y-8 text-sm md:text-base">
         <div>
-          <Indentation />
           We began scouting for a home in the suburbs of Los Angeles in the
           summer of 2023. I honestly had no idea how big the LA area was...wow!
           We originally thought Irvine might be a fit, then WeHo but finally
@@ -15,7 +13,6 @@ const AboutMeLosAngelesStory: React.FC = () => {
           since.
         </div>
         <div>
-          <Indentation />
           In a bit of a twist of fate, I lost my job to a company-wide layoff
           just days after our move. I had a serious moment of panic at first,
           but then I realized that my life had prepared me for such things. I
@@ -23,7 +20,6 @@ const AboutMeLosAngelesStory: React.FC = () => {
           fallen into a bit of a comfortable groove previously.
         </div>
         <div>
-          <Indentation />
           Since then, I've started building up current certifications and I am
           seeking position at a company that is doing a bit more than helping
           people sell goods online. I hope to bring fresh, new knowledge in the

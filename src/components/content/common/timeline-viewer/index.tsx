@@ -74,9 +74,9 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
   const getLineForYear = (year: number): React.ReactNode => {
     const result = entries.some((entry) => entry.year === year) ? (
       entryCounter % 2 === 0 ? (
-        <div className="absolute border border-cade-blue-dark w-20 right-[14px] top-[10px] -skew-y-6" />
+        <div className="absolute border border-cade-blue-dark w-4 md:w-20 right-[14px] top-[10px] -skew-y-6" />
       ) : (
-        <div className="absolute border border-cade-blue-dark w-20 left-[14px] top-[2px] -skew-y-6" />
+        <div className="absolute border border-cade-blue-dark w-4 md:w-20 left-[14px] top-[2px] -skew-y-6" />
       )
     ) : null;
     if (result) {
@@ -104,7 +104,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
         ))}
       </div>
       <div className="flex flex-col items-center w-10 md:w-40">
-        <div className="text-lg py-2 font-bold text-cade-blue-med">
+        <div className="text-sm md:text-lg py-2 font-bold text-cade-blue-med">
           {startYear}
         </div>
         <div className="flex flex-col items-center bg-gradient-to-b from-cade-blue-dark via-cade-blue-dark/70 to-cade-blue-dark">
@@ -121,7 +121,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
             );
           })}
         </div>
-        <div className="text-lg py-2 font-bold text-cade-blue-med">
+        <div className="text-sm md:text-lg py-2 font-bold text-cade-blue-med">
           {endYear}
         </div>
       </div>

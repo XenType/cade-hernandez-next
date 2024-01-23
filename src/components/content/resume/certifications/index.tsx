@@ -10,7 +10,7 @@ import CertificationPreface from "./preface";
 
 const ResumeCertifications: React.FC = () => {
   return (
-    <div className="max-w-[1000px] m-auto mt-4 mb-16 md:-mt-2 xl:mt-0 xl:pb-4 xl:min-h-[575px] flex flex-col">
+    <div className="max-w-[1000px] m-auto my-2 md:mt-4 md:mb-12 md:-mt-2 xl:mt-0 xl:pb-4 xl:min-h-[575px] flex flex-col">
       <ComponentViewer
         title="Certification Viewer"
         defaultPath="Preface"

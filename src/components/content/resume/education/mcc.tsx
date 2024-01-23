@@ -6,13 +6,13 @@ const ResumeEducationMcc: React.FC<EducationInstitutionProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center justify-center w-[350px] bg-gray-200 rounded-lg overflow-hidden shadow-xl uta-background cursor-pointer hover:shadow-cade-blue-med/30 border-2 ${
+      className={`flex flex-col items-center justify-center w-[350px] bg-gray-200 rounded-lg overflow-hidden shadow-xl mcc-background cursor-pointer hover:shadow-cade-blue-med/30 border-2 ${
         selected ? "border-cade-blue-med" : "border-transparent"
       }`}
       onClick={() => onClick("MCC")}
     >
       <div className="flex flex-col items-center justify-between h-[275px] xl:h-[350px] w-full bg-white/80 grow py-4">
-        <div className="text-xs md:text-lg font-semibold">
+        <div className="text-xs md:text-lg font-semibold text-center">
           McLennan Community College
         </div>
         <div className="flex flex-col items-center space-y-2 w-full px-2 md:px-10">
@@ -26,7 +26,7 @@ const ResumeEducationMcc: React.FC<EducationInstitutionProps> = ({
             </ul>
           </div>
           <div className="text-xs md:text-sm font-semibold">1997-1999</div>
-          <div className="text-xs md:italic">
+          <div className="text-xs italic text-center">
             Image © McLennan Community College
           </div>
         </div>

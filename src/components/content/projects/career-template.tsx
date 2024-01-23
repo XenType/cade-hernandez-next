@@ -27,13 +27,15 @@ const CareerTemplate: React.FC<CareerTemplateProps> = ({
       <div className="flex flex-col md:flex-row w-full p-2 space-y-2 md:space-y-0">
         <div className="flex flex-col md:space-y-2 text-cade-blue-dark grow">
           <div className="text-lg md:text-3xl font-bold">{projectTitle}</div>
-          <div className="md:pl-2 text-base md:text-xl">{company}</div>
+          <div className="text-sm md:text-xl">{company}</div>
         </div>
-        {href ? (
-          <LinkButton href={href} target="_blank">
-            {buttonText}
-          </LinkButton>
-        ) : null}
+        <div className="flex">
+          {href ? (
+            <LinkButton href={href} target="_blank">
+              {buttonText}
+            </LinkButton>
+          ) : null}
+        </div>
       </div>
       <div className="flex flex-col w-full border-2 border-gray-400 bg-white h-full p-4 md:py-6 md:px-8 space-y-4">
         <div className="flex flex-row justify-between">

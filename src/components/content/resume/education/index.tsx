@@ -37,7 +37,7 @@ const ResumeEducation: React.FC = () => {
   };
 
   return (
-    <div className="xl:min-h-[550px] max-w-[1000px] flex flex-col items-center justify-center space-y-10 md:space-y-4 mt-2 mb-8 md:mb-4 mx-1 md:m-auto md:mt-8">
+    <div className="xl:min-h-[550px] max-w-[1000px] flex flex-col items-center justify-center space-y-6 md:space-y-12 md:mb-4 mx-1 md:m-auto mt-8 md:mt-10">
       <div className="flex flex-row w-full justify-center items-center space-x-2 md:space-x-12 px-2 md:px-0">
         <ResumeEducationMcc
           onClick={updateStoryDisplay}
@@ -48,7 +48,7 @@ const ResumeEducation: React.FC = () => {
           selected={selectedInstitution === "UTA"}
         />
       </div>
-      <div className="flex flex-col items-center justify-center bg-white md:h-28 py-2 px-4 md:px-8 md:w-[600px] rounded-md shadow text-sm text-justify">
+      <div className="flex flex-col items-center justify-center bg-white md:h-28 py-2 px-4 min-h-[100px] md:px-8 md:w-[600px] rounded-md shadow text-sm text-justify">
         <div id="description-text">
           {selectedInstitution !== "" ? <Indentation spaces={2} /> : null}
           {getStoryText(selectedInstitution)}
