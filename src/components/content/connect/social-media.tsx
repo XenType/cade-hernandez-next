@@ -15,7 +15,7 @@ const ConnectSocialMedia: React.FC = () => {
         className="w-[400px]"
       >
         <div className="flex flex-col md:flex-row md:space-x-8 justify-center items-center w-full">
-          <LinkedInIcon className="text-8xl text-white/60" />
+          <LinkedInIcon className="text-8xl text-white/60" fontSize="inherit" />
           <div className="flex-grow">
             <Headline className="text-2xl text-white/60 font-semibold">
               in/c-cade-hernandez/
@@ -29,7 +29,10 @@ const ConnectSocialMedia: React.FC = () => {
         className="w-[400px]"
       >
         <div className="flex flex-col md:flex-row md:space-x-8 justify-center items-center w-full">
-          <InstagramIcon className="text-8xl text-white/60" />
+          <InstagramIcon
+            className="text-8xl text-white/60"
+            fontSize="inherit"
+          />
           <div className="flex grow">
             <Headline className="text-2xl text-white/60 font-semibold">
               /c_cade_hernandez/

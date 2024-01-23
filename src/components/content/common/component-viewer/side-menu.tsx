@@ -57,9 +57,9 @@ const SideMenu: React.FC<SideMenuProps> = ({ menu, onSelection }) => {
                   <div>{menuGroupEntry.title}</div>
                   {menuGroupEntry.menuItems ? (
                     openGroup === menuGroupEntry.title ? (
-                      <CloseIcon className="text-sm" />
+                      <CloseIcon className="text-sm" fontSize="inherit" />
                     ) : (
-                      <AddIcon className="text-sm" />
+                      <AddIcon className="text-sm" fontSize="inherit" />
                     )
                   ) : null}
                 </div>
