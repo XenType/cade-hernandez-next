@@ -21,16 +21,16 @@ const CareerProjectsPage: React.FC = () => {
         <div className="flex grow overflow-hidden">
           <VerticalSlideshow
             slides={[
-              <CareerIntro />,
-              <EfgFirstFreedomProject />,
-              <EfgChexceptProject />,
-              <JenethWebinar />,
-              <VolusionUplift />,
-              <VolusionAutoSSL />,
-              <VolusionCheckout />,
-              <VolusionPayPal />,
-              <VolusionEmailService />,
-              <VolusionPayments />,
+              <CareerIntro key="intro" />,
+              <EfgFirstFreedomProject key="fff" />,
+              <EfgChexceptProject key="chex" />,
+              <JenethWebinar key="jeneth" />,
+              <VolusionUplift key="uplift" />,
+              <VolusionAutoSSL key="ssl" />,
+              <VolusionCheckout key="checkout" />,
+              <VolusionPayPal key="ppcp" />,
+              <VolusionEmailService key="email" />,
+              <VolusionPayments key="pay" />,
             ]}
           />
         </div>

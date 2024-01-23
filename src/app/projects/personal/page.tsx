@@ -17,12 +17,12 @@ const PersonalProjectsPage: React.FC = () => {
         <div className="flex h-full grow overflow-hidden">
           <VerticalSlideshow
             slides={[
-              <PersonalIntro />,
-              <SkillMachineLearning />,
-              <GameZeepBop />,
-              <GameStellaformer />,
-              <NpmTestLogic />,
-              <GameOsiris />,
+              <PersonalIntro key="intro" />,
+              <SkillMachineLearning key="skill" />,
+              <GameZeepBop key="zeep" />,
+              <GameStellaformer key="sella" />,
+              <NpmTestLogic key="npm" />,
+              <GameOsiris key="osiris" />,
             ]}
           />
         </div>

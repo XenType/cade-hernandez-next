@@ -20,15 +20,15 @@ const FreelanceProjectsPage: React.FC = () => {
         <div className="flex h-full grow overflow-hidden">
           <VerticalSlideshow
             slides={[
-              <FreelanceIntro />,
-              <ThisWebsite />,
-              <GlactWebsite />,
-              <CourtWebsite />,
-              <KmcbWebsite />,
-              <JenethWebsite />,
-              <JenethWebinars />,
-              <DagarsInventory />,
-              <ZocaWebsite />,
+              <FreelanceIntro key="intro" />,
+              <ThisWebsite key="this" />,
+              <GlactWebsite key="glact" />,
+              <CourtWebsite key="court" />,
+              <KmcbWebsite key="kmcb" />,
+              <JenethWebsite key="website" />,
+              <JenethWebinars key="webinar" />,
+              <DagarsInventory key="dagars" />,
+              <ZocaWebsite key="zoca" />,
             ]}
           />
         </div>
