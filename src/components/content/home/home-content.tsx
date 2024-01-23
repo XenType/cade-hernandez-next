@@ -35,9 +35,9 @@ const HomeContent: React.FC = () => {
   };
 
   return (
-    <div className="m-auto mt-20 md:mt-40 xl:mt-48 flex flex-col w-full max-w-[1000px] space-y-10">
+    <div className="m-auto mt-10 md:mt-40 xl:mt-48 flex flex-col w-full max-w-[1000px] space-y-10">
       <div className="flex flex-col-reverse md:flex-row w-full justify-between items-center md:items-start">
-        <div className="flex flex-col h-full space-y-16 pt-8 items-center">
+        <div className="flex flex-col h-full space-y-8 md:space-y-16 pt-8 items-center">
           <Headline className="text-4xl md:text-7xl text-cade-blue-dark font-semibold grow">
             Welcome to my
             <br />
@@ -56,7 +56,7 @@ const HomeContent: React.FC = () => {
           {pageState === PageState.EXPLORE ? <ExploreContent /> : null}
         </div>
         <div className="relative h-[200px] w-[150px] md:h-[400px] md:w-[300px]">
-          <div className="bg-cade-blue-lite  md:h-[375px] md:w-[275px] absolute bottom-0 right-0 rounded-2xl" />
+          <div className="bg-cade-blue-lite h-[200px] w-[150px] md:h-[375px] md:w-[275px] absolute top-4 left-4 md:bottom-0 md:right-0 rounded-2xl" />
           <div className="cade-image-bg h-[200px] w-[150px] md:h-[375px] md:w-[275px] overflow-hidden rounded-2xl absolute" />
         </div>
       </div>
