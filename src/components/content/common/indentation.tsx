@@ -1,5 +1,9 @@
-const Indentation: React.FC = () => {
-  return <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>;
+interface IndentationProps {
+  spaces?: number;
+}
+
+const Indentation: React.FC<IndentationProps> = ({ spaces = 6 }) => {
+  return <span dangerouslySetInnerHTML={{ __html: "&nbsp;".repeat(spaces) }} />;
 };
 
 export default Indentation;

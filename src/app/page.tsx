@@ -1,13 +1,9 @@
-import About from "@/components/content/home/about";
-import FeaturedContent from "@/components/content/home/featured";
-import WelcomeContent from "@/components/content/home/welcome";
+import HomeContent from "@/components/content/home/home-content";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <WelcomeContent />
-      <FeaturedContent />
-      <About />
+    <div className="w-full h-full bg-white flex px-16">
+      <HomeContent />
     </div>
   );
 }

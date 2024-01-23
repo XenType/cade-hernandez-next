@@ -1,9 +1,13 @@
 enum PagePath {
   HOME = "/",
-  EXPERIENCE = "/experience",
-  SKILLS = "/skills",
   PROJECTS = "/projects",
+  PROJ_CAREER = "/projects/career",
+  PROJ_FREELANCE = "/projects/freelance",
+  PROJ_PERSONAL = "/projects/personal",
+  RESUME = "/resume",
+  SKILLS = "/skills",
   CONNECT = "/connect",
+  ABOUT = "/about",
 }
 
 enum ExternalLinkNames {

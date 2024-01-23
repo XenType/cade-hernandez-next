@@ -7,7 +7,7 @@ const MessageBar: React.FC = () => {
   const pathName = usePathname();
   const getMessageForPath = (): String => {
     switch (pathName) {
-      case PagePath.EXPERIENCE:
+      case PagePath.RESUME:
         return `I've experienced more than just the tech sector...`;
       case PagePath.SKILLS:
         return `I've picked these skills along the way...`;
@@ -20,8 +20,8 @@ const MessageBar: React.FC = () => {
   };
 
   return (
-    <div className="fixed w-full text-center bg-amber-600 text-white h-8 text-sm z-10">
-      {getMessageForPath()}
+    <div className="w-full text-center bg-blue-800 text-white h-6 text-sm z-10 flex flex-col justify-center">
+      <div>{getMessageForPath()}</div>
     </div>
   );
 };
