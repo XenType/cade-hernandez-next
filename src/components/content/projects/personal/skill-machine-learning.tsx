@@ -7,9 +7,9 @@ const SkillMachineLearning: React.FC = () => {
       projectTitle="Machine Learning Engineer"
       subtitle="Google Certification"
       year="2024"
-      buttonText1="View Ciriculum"
+      buttonText1="View Curriculum"
       href1="https://www.cloudskillsboost.google/paths/17?utm_source=cgc&utm_medium=website&utm_campaign=evergreen"
-      skillList={["Artificial intelligence", "Machine Learning"]}
+      skillList={["Artificial Intelligence", "Machine Learning"]}
       thumbnail={<ThumbGoogleAi />}
       isActive
     >
@@ -22,7 +22,7 @@ const SkillMachineLearning: React.FC = () => {
         <div>
           After completing some less in-depth certifications, I am undertaking
           the Google Machine Learning Engineer Learning Path. I'll gain deeper
-          insight into the complexities of Convolusional Neural Networks and
+          insight into the complexities of Convolutional Neural Networks and
           work hands-on with Google's AI Platform.
         </div>
       </div>

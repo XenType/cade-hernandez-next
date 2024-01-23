@@ -89,6 +89,27 @@
   background-position: center;
 }
 
+.origins-background {
+  background-image: url("/images/desert-city.png");
+  background-size: cover;
+  background-position: right;
+}
+.austin-background {
+  background-image: url("/images/texas-city.png");
+  background-size: cover;
+  background-position: right;
+}
+.sf-background {
+  background-image: url("/images/san-francisco.png");
+  background-size: cover;
+  background-position: right;
+}
+.la-background {
+  background-image: url("/images/los-angeles.png");
+  background-size: cover;
+  background-position: right;
+}
+
 .scroll-fade {
   mask-image: linear-gradient(
     to right,

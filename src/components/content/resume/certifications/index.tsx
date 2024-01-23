@@ -4,13 +4,13 @@ import GoogleMachineLearning from "./google-machine-learning";
 import IbmAiFundamentals from "./ibm-ai-fundamentals";
 import IbmFitCyberSecurity from "./ibm-fit-cyber-security";
 import IbmFitItDesign from "./ibm-fit-it-design";
-import IbmFitLinxAdmin from "./ibm-fit-linux-admin";
+import IbmFitLinuxAdmin from "./ibm-fit-linux-admin";
 import IbmFitWebDeveloper from "./ibm-fit-web-developer";
 import CertificationPreface from "./preface";
 
 const ResumeCertifications: React.FC = () => {
   return (
-    <div className="max-w-[1000px] m-auto -mt-2 xl:mt-0 xl:pb-4 xl:min-h-[575px] flex flex-col">
+    <div className="max-w-[1000px] m-auto mt-4 mb-16 md:-mt-2 xl:mt-0 xl:pb-4 xl:min-h-[575px] flex flex-col">
       <ComponentViewer
         title="Certification Viewer"
         defaultPath="Preface"
@@ -32,7 +32,7 @@ const ResumeCertifications: React.FC = () => {
                 component: <IbmFitCyberSecurity />,
               },
               { title: "Fit: IT Design", component: <IbmFitItDesign /> },
-              { title: "Fit: Linux Admin", component: <IbmFitLinxAdmin /> },
+              { title: "Fit: Linux Admin", component: <IbmFitLinuxAdmin /> },
             ],
           },
           {

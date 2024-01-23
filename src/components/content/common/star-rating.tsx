@@ -8,9 +8,11 @@ interface StarRatingProps {
 const StarRating: React.FC<StarRatingProps> = ({ rating }) => {
   const getRatingStar = (position: number): React.ReactNode => {
     if (position <= rating) {
-      return <StarIcon className="text-cade-blue-lite" />;
+      return <StarIcon className="text-cade-blue-lite text-sm md:text-base" />;
     }
-    return <StarBorderIcon className="text-cade-blue-lite" />;
+    return (
+      <StarBorderIcon className="text-cade-blue-lite text-sm md:text-base" />
+    );
   };
 
   return (

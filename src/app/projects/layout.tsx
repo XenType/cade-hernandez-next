@@ -8,7 +8,7 @@ export default function ProjectsLayout({
   return (
     <div className="flex flex-col h-full w-full">
       <ProjectMenu />
-      <div className="grow">{children}</div>
+      <div className="overflow-y-auto grow">{children}</div>
     </div>
   );
 }

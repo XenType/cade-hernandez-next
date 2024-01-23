@@ -1,6 +1,6 @@
 const ThumbOsiris: React.FC = () => {
   return (
-    <div className="rounded -lg overflow-hidden shadow-md shadow-cade-blue-lite bg-white p-2">
+    <div className="rounded -lg overflow-hidden shadow-md shadow-cade-blue-lite bg-white p-2 flex">
       <svg
         fill="#000000"
         viewBox="0 0 32 32"

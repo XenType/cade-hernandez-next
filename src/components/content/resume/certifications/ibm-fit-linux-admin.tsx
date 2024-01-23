@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import CertificationTemplate from "./template";
 
-const IbmFitLinxAdmin: React.FC = () => {
+const IbmFitLinuxAdmin: React.FC = () => {
   useEffect(() => {
     const existingScript = document.getElementById("credly-script");
     if (!existingScript) {
@@ -35,10 +35,10 @@ const IbmFitLinxAdmin: React.FC = () => {
       }
     >
       This certification comes as part of the IBM SkillsBuild onboarding process
-      and demonstrates skills and knowledge necessary to persue a career as a
+      and demonstrates skills and knowledge necessary to pursue a career as a
       Linux System Administrator.
     </CertificationTemplate>
   );
 };
 
-export default IbmFitLinxAdmin;
+export default IbmFitLinuxAdmin;

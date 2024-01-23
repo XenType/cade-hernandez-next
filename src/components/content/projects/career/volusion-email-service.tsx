@@ -13,7 +13,7 @@ const VolusionEmailService: React.FC = () => {
         "TypeScript",
         "ExpressJS",
         "NodeJS",
-        "PostresSQL",
+        "PostgresSQL",
         "CI/CD",
         "Redis",
       ]}

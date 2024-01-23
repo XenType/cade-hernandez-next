@@ -25,7 +25,7 @@ const VolusionUplift: React.FC = () => {
           queries.
         </div>
         <div className="text-xs text-center">
-          ** This was an internal project with no external documenation or
+          ** This was an internal project with no external documentation or
           release notes. **
         </div>
       </div>

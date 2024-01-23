@@ -6,9 +6,10 @@ import Link from "next/link";
 
 interface MenuItemProps {
   itemPath: string;
+  onItemClick?: () => void;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ itemPath }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ itemPath, onItemClick }) => {
   const pathName = usePathname();
   const getMenuTitle = (): string => {
     switch (itemPath) {
@@ -38,7 +39,11 @@ const MenuItem: React.FC<MenuItemProps> = ({ itemPath }) => {
           : "text-cade-blue-dark"
       }`}
     >
-      <Link href={itemPath} title={getMenuTitle()}>
+      <Link
+        onClick={() => onItemClick?.()}
+        href={itemPath}
+        title={getMenuTitle()}
+      >
         {getMenuTitle()}
       </Link>
     </div>

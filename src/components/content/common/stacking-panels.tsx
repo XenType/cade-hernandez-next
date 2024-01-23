@@ -27,7 +27,7 @@ const StackingPanels: React.FC<StackingPanelsProps> = ({ panels }) => {
               <div className="text-cade-blue-dark text-lg xl:text-2xl font-bold text-center">
                 {title}
               </div>
-              <div className="h-full grow">{content}</div>
+              <div className="grow">{content}</div>
             </div>
           </div>
         </li>

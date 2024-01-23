@@ -59,9 +59,9 @@ const ResumeExperience: React.FC = () => {
   return (
     <div className="flex w-full bg-cade-blue-dark/10">
       <div className="max-w-[1000px] m-auto flex flex-col h-full">
-        <div className="w-full flex flex-row justify-center text-center text-lg font-bold p-2">
+        <div className="w-full flex flex-row justify-center text-center text-sm md:text-lg font-bold p-2 space-x-4 md:space-x-0">
           <div
-            className={`w-4/12 cursor-pointer ${
+            className={`md:w-4/12 cursor-pointer ${
               entryKeyState === "Engineering"
                 ? "text-cade-blue-dark underline"
                 : "text-cade-blue-dark/80"
@@ -71,7 +71,7 @@ const ResumeExperience: React.FC = () => {
             Career: Engineering
           </div>
           <div
-            className={`w-4/12 cursor-pointer ${
+            className={`md:w-4/12 cursor-pointer ${
               entryKeyState === "Service"
                 ? "text-cade-blue-dark underline"
                 : "text-cade-blue-dark/80"
@@ -81,7 +81,7 @@ const ResumeExperience: React.FC = () => {
             Career: Service
           </div>
           <div
-            className={`w-4/12 cursor-pointer ${
+            className={`md:w-4/12 cursor-pointer ${
               entryKeyState === "Support"
                 ? "text-cade-blue-dark underline"
                 : "text-cade-blue-dark/80"
@@ -91,7 +91,7 @@ const ResumeExperience: React.FC = () => {
             Career: Support
           </div>
         </div>
-        <div className="flex flex-col h-full pb-2 pt-6 items-center justify-center grow">
+        <div className="flex flex-col h-full pb-2 pt-6 items-center justify-center grow px-2">
           {entryKeyState &&
           entryListState.length &&
           startYearState &&
@@ -102,7 +102,7 @@ const ResumeExperience: React.FC = () => {
               endYear={endYearState}
             />
           ) : (
-            <div className="flex flex-col space-y-1 xl:space-y-4 items-center grow min-w-[800px] bg-white rounded-lg shadow shadow-cade-blue-dark/20 py-4 px-2 mb-4">
+            <div className="flex flex-col space-y-1 xl:space-y-4 items-center grow md:min-w-[800px] bg-white rounded-lg shadow shadow-cade-blue-dark/20 py-4 px-2 mb-4">
               <div className="pt xl:pt-2 xl:text-lg font-semibold">
                 Experience That Spans Three Career Paths
               </div>
@@ -113,7 +113,7 @@ const ResumeExperience: React.FC = () => {
                   the leader of a small engineering team, I was young and wanted
                   the freedoms I saw my friends enjoying. In 2003 I set out to
                   build a client list as a freelance website developer and
-                  maintained an hourly side-job to suppliment my income.
+                  maintained an hourly side-job to supplement my income.
                 </p>
                 <p className="text-justify">
                   When I moved to Austin, TX I applied for an open Game Master
@@ -132,7 +132,7 @@ const ResumeExperience: React.FC = () => {
                 <p className="text-justify">
                   As much as I enjoyed over a decade of work outside of the
                   tech-sector, I eventually felt the pull to return. I found my
-                  foothold at a SaaS company and quickly modernized my skillset
+                  foothold at a SaaS company and quickly modernized my skill set
                   to meet the output of all of my peers. A recent downsizing in
                   staff resulted in our parting ways, but I am very appreciative
                   of the opportunities I was given during my 7+ years of

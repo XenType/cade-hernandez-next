@@ -90,7 +90,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
         currentComponent={currentComponent}
         onCloseClick={handleCloseClick}
       />
-      <div className="flex flex-col h-full space-y-10 items-end z-5 grow">
+      <div className="flex flex-col h-full space-y-2 md:space-y-10 items-end z-5 grow">
         {leftGroups.map(({ year, groupProps }) => (
           <EventGroupCard
             key={year}
@@ -102,7 +102,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
           />
         ))}
       </div>
-      <div className="flex flex-col items-center w-40">
+      <div className="flex flex-col items-center w-10 md:w-40">
         <div className="text-lg py-2 font-bold text-cade-blue-med">
           {startYear}
         </div>

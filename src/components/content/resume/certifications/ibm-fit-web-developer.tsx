@@ -35,7 +35,7 @@ const IbmFitWebDeveloper: React.FC = () => {
       }
     >
       This certification comes as part of the IBM SkillsBuild onboarding process
-      and demonstrates skills and knowledge necessary to persue a career in Web
+      and demonstrates skills and knowledge necessary to pursue a career in Web
       Development.
     </CertificationTemplate>
   );

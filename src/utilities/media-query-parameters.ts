@@ -1,3 +1,5 @@
 const SCREEN_XL = { minHeight: 1000, minWidth: 1200 };
 
-export { SCREEN_XL };
+const SCREEN_MOBILE = { maxHeight: 1000, maxWidth: 500 };
+
+export { SCREEN_XL, SCREEN_MOBILE };

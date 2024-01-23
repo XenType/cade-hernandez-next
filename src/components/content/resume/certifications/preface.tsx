@@ -5,7 +5,7 @@ const CertificationPreface: React.FC = () => {
   return (
     <CertificationTemplate title="Preface">
       <div className="flex flex-col space-y-2">
-        <div className="italic font-semibold">Certifications!?!?!?!</div>
+        <div className="italic font-semibold z-1">Certifications!?!?!?!</div>
         <div>
           <Indentation spaces={2} />
           As I venture out into the job market, I can't help but regret the fact

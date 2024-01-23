@@ -2,11 +2,12 @@ import Indentation from "../../common/indentation";
 
 const PersonalIntro: React.FC = () => {
   return (
-    <div className="flex flex-col space-y-4 px-8 h-full">
-      <div className="text-center text-2xl font-semibold">
+    <div className="flex flex-col space-y-2 md:space-y-4 p-2 md:px-8">
+      <div className="text-center text-lg md:text-2xl font-semibold">
         For My Own Personal Enlightenment
       </div>
-      <div className="flex flex-col space-y-8 grow pt-8">
+
+      <div className="flex flex-col space-y-2 md:space-y-8 grow md:pt-8 overflow-y-auto h-[560px] px-2">
         <div className="text-justify text-sm font-semibold">
           <Indentation />
           Something I've often neglected in the past has been developing skills
@@ -25,7 +26,7 @@ const PersonalIntro: React.FC = () => {
           In 2024 I plan to:
           <ul className="list-disc pl-10 pt-2">
             <li>Finish and release my first marketable mobile game.</li>
-            <li>Aquire a Google Machine Learning Engineer certification.</li>
+            <li>Acquire a Google Machine Learning Engineer certification.</li>
             <li>Expand ZoCa to include additional product domains.</li>
             <li>Find a new position at an AI-forward company.</li>
           </ul>

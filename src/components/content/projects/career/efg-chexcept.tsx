@@ -13,10 +13,10 @@ const EfgChexceptProject: React.FC = () => {
         <div>
           The most exciting and - <span className="italic">dare-I-say</span> -
           cutting-edge project I worked on at EFG was an online check processing
-          system that rentors (mainly apartment complexes) used to scan checks
-          via a special piece of hardware, verify the extracted data was
-          correct, and submit them electronically in batches at the end of each
-          day.
+          system that property rental companies (mainly apartment complexes)
+          used to scan checks via a special piece of hardware, verify the
+          extracted data was correct, and submit them electronically in batches
+          at the end of each day.
         </div>
         <div>
           This process seems so common place today, but at the time it was only

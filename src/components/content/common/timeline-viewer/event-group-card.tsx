@@ -16,7 +16,7 @@ const EventGroupCard: React.FC<EventGroupCardProps> = ({
   onEventClick,
 }) => {
   return (
-    <div className="bg-cade-blue-dark rounded-md shadow-lg border border-cade-blue-med shadow-cade-blue-med/50 z-5 w-[350px] flex flex-col space-y-2 pb-2">
+    <div className="bg-cade-blue-dark rounded-md shadow-lg border border-cade-blue-med shadow-cade-blue-med/50 z-5 w-[150px] md:w-[350px] flex flex-col space-y-2 pb-2">
       <div className="flex flex-col z-5">
         <div className="flex flex-row justify-between w-full items-center text-white">
           <div className="px-4 py-2 flex flex-col">

@@ -18,7 +18,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     <Link
       href={href}
       target={target}
-      className="px-4 py-2 border-[1px] border-cade-blue-light rounded-md m-auto shadow-md hover:shadow-lg bg-white/60"
+      className="px-4 py-2 border-[1px] border-cade-blue-light rounded-md m-auto shadow-md hover:shadow-lg bg-white/60 font-semibold"
     >
       <div className="flex flex-row space-x-2 items-center text-cade-blue-dark">
         <div>{children}</div>

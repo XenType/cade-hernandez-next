@@ -29,7 +29,7 @@ const VolusionCheckout: React.FC = () => {
           merchant.
         </div>
         <div>
-          This applicaiton served as a stong foundation for future payment
+          This application served as a strong foundation for future payment
           processing features that would have been difficult to implement in the
           older checkout page. The streamlined design also increased conversions
           for existing merchants as well as trial-to-store conversions for

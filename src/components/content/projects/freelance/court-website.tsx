@@ -19,8 +19,8 @@ const CourtWebsite: React.FC = () => {
         </div>
         <div>
           Having a website allowed The Court to advertise event schedules and
-          attract new donors. A browsable archive of pictures taken from yearly
-          formal events was also available to view online.
+          attract new donors. A browser-friendly archive of pictures taken from
+          yearly formal events was also available to view online.
         </div>
         <div className="text-xs text-center">
           ** The Wayback Machine image of this site is not 100% complete. **

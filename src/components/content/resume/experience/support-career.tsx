@@ -27,7 +27,33 @@ const SupportCareerTimeline: TimelineConfiguration = {
               {
                 key: "issue",
                 content:
-                  "Issue citations for unexceptable online behavior according to a strict internal grading system.",
+                  "Issue citations for unacceptable online behavior according to a strict internal grading system.",
+              },
+            ],
+          },
+          {
+            title: "Team Point",
+            startYear: 2007,
+            eventList: [
+              {
+                key: "continue",
+                content:
+                  "Continue with all responsibilities of any other Game Master.",
+              },
+              {
+                key: "collect",
+                content:
+                  "Collect team metrics and set up coaching sessions as needed for those not meeting standards.",
+              },
+              {
+                key: "assist",
+                content:
+                  "Assist the team manager with daily tasks and weekly reporting.",
+              },
+              {
+                key: "meet",
+                content:
+                  "Meet with departmental leadership monthly to give feedback and provide insight on factors affecting productivity.",
               },
             ],
           },

@@ -13,12 +13,12 @@ import VolusionUplift from "@/components/content/projects/career/volusion-uplift
 
 const CareerProjectsPage: React.FC = () => {
   return (
-    <div className="w-full h-full bg-cade-blue-dark flex flex-col px-16">
+    <div className="w-full h-full bg-cade-blue-dark flex flex-col px-4 md:px-16">
       <div className="flex flex-col w-full h-full mt-4 xl:mt-20 space-y-2 xl:space-y-14">
         <Headline className="text-center text-2xl xl:text-6xl text-white">
           Career Projects
         </Headline>
-        <div className="flex h-full grow">
+        <div className="flex grow overflow-hidden">
           <VerticalSlideshow
             slides={[
               <CareerIntro />,

@@ -5,7 +5,7 @@ interface PillTagProps {
 const PillTag: React.FC<PillTagProps> = ({ children }) => {
   return (
     <div
-      className={`
+      className={`text-sm md:text-base
       border-2 border-cade-blue-lite 
       bg-white text-cade-blue-dark font-bold
       hover:bg-cade-blue-dark hover:text-white

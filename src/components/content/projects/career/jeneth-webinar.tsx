@@ -14,7 +14,7 @@ const JenethWebinar: React.FC = () => {
       <div className="flex flex-col space-y-2 w-full">
         <div>
           This project started as a way to automate Jeneth's own webinars, but
-          we quickly recognized the value in building it in a rebrandable
+          we quickly recognized the value in building it in a customizable
           fashion. After several successful uses internally, it was marketed to
           other entrepreneurs making substantial profits.
         </div>

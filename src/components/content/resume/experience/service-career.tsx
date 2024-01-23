@@ -27,7 +27,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
               {
                 key: "maintain",
                 content:
-                  "Work as a team to maintain restuarant cleanliness and service standards.",
+                  "Work as a team to maintain restaurant cleanliness and service standards.",
               },
             ],
           },
@@ -37,7 +37,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
             eventList: [
               {
                 key: "continue",
-                content: "Continue responsibilites of a Server / Bartender.",
+                content: "Continue responsibilities of a Server / Bartender.",
               },
               {
                 key: "train",
@@ -63,7 +63,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
               {
                 key: "establish",
                 content:
-                  "Establish relationships with local businesses to suppliment corporate advertising efforts.",
+                  "Establish relationships with local businesses to supplement corporate advertising efforts.",
               },
               {
                 key: "plan",
@@ -73,7 +73,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
               {
                 key: "manage",
                 content:
-                  "Manage staff memebers during high-quality remote food service at a variety of venues for up to 400 guests.",
+                  "Manage staff members during high-quality remote food service at a variety of venues for up to 400 guests.",
               },
             ],
           },
@@ -123,9 +123,9 @@ const ServiceCareerTimeline: TimelineConfiguration = {
             startYear: 2011,
             eventList: [
               {
-                key: "interiew",
+                key: "interview",
                 content:
-                  "Inteveiw waitstaff applicants and assist in the selection of the best candidates for hire.",
+                  "Interview waitstaff applicants and assist in the selection of the best candidates for hire.",
               },
               {
                 key: "train",
@@ -156,7 +156,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
               {
                 key: "lead",
                 content:
-                  "Lead the entire restaurant staff in preparing for and successfull exectuing breakfast and lunch service.",
+                  "Lead the entire restaurant staff in preparing for and successfully executing breakfast and lunch service.",
               },
               {
                 key: "maintain",
@@ -202,7 +202,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
             eventList: [
               {
                 key: "continue",
-                content: "Continue responsibilites of a Server / Bartender.",
+                content: "Continue responsibilities of a Server / Bartender.",
               },
               {
                 key: "train",
@@ -238,7 +238,7 @@ const ServiceCareerTimeline: TimelineConfiguration = {
               {
                 key: "manage",
                 content:
-                  "Manage staff memebers during high-quality remote food service at a variety of venues for up to 1200 guests.",
+                  "Manage staff members during high-quality remote food service at a variety of venues for up to 1200 guests.",
               },
             ],
           },

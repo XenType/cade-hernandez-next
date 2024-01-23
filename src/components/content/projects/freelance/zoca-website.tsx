@@ -17,7 +17,7 @@ const ZocaWebsite: React.FC = () => {
           provides a steady additional income.
         </div>
         <div>
-          While these stores are built using free templates avaialble to anyone
+          While these stores are built using free templates available to anyone
           on the platform, I've customized them using the CSS editor and
           adjusted SEO to boost traffic.
         </div>

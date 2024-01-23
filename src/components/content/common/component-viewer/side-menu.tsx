@@ -41,8 +41,8 @@ const SideMenu: React.FC<SideMenuProps> = ({ menu, onSelection }) => {
   };
 
   return (
-    <div className="flex h-full flex-col border-r border-gray-400 shadow shadow-cade-blue-lite w-[190px] bg-cade-blue-lite/10">
-      <ul className="text-sm flex flex-col">
+    <div className="absolute md:flex h-full flex-col border-r border-gray-400 shadow shadow-cade-blue-lite w-[190px] bg-white">
+      <ul className="text-sm flex flex-col z-10 bg-cade-blue-lite/20">
         {menu.map((menuGroupEntry) => {
           return (
             <li
