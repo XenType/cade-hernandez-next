@@ -13,7 +13,7 @@ const ResumePage: React.FC = () => {
       <div className="w-full flex flex-row justify-end px-8 py-4">
         <div className="flex">
           <LinkButton
-            href="https://drive.google.com/file/d/1O3Nb3N1uXRh7-1sdFAEgHsCcf-W_gWi5/view?usp=sharing"
+            href="https://drive.google.com/file/d/1XHtOwhdSNBAMkqiNJuMv_irlw75pfkoW/view?usp=sharing"
             target="_blank"
           >
             <div className="flex flex-row">

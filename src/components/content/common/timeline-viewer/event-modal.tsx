@@ -23,7 +23,10 @@ const EventModal: React.FC<EventModalProps> = ({
           className="flex flex-row justify-end p-2 cursor-pointer bg-cade-blue-dark/70"
           onClick={() => handleCloseClick()}
         >
-          <CloseIcon className="text-sm hover:text-red-800" />
+          <CloseIcon
+            className="text-sm hover:text-red-800"
+            fontSize="inherit"
+          />
         </div>
         <div className="p-2 w-full flex flex-row items-center justify-center">
           {currentComponent}

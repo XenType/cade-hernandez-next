@@ -32,7 +32,7 @@ const ResumeFilterControl: React.FC<ResumeFilterControlProps> = ({
               onChange("");
             }}
           >
-            <CloseIcon className="text-sm" />
+            <CloseIcon className="text-sm" fontSize="inherit" />
           </div>
         </div>
       </div>
