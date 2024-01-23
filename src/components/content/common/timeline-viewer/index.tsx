@@ -60,7 +60,8 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
     setLineSegmentHeight(
       Math.floor((isScreenXL ? 450 : 325) / getYearRange().length)
     );
-  }, [entries]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [entries, isScreenXL]);
 
   useEffect(() => {
     if (rightGroups.length) {
@@ -68,7 +69,7 @@ const TimelineViewer: React.FC<TimelineViewerProps> = ({
         (rightGroups[0].year - startYear - 2) * lineSegmentHeight
       );
     }
-  }, [lineSegmentHeight, endYear, startYear]);
+  }, [lineSegmentHeight, endYear, startYear, rightGroups]);
 
   const getLineForYear = (year: number): React.ReactNode => {
     const result = entries.some((entry) => entry.year === year) ? (
