@@ -1,5 +1,9 @@
 import ComponentViewer from "../../common/component-viewer";
-import GoogleCloudEngineer from "./google-cloud-engineer";
+import GoogleCloudDeveloper from "./google-cloud-developer";
+import GoogleCloudEnvironments from "./google-cloud-environments";
+import GoogleCloudFoundationalTasks from "./google-cloud-foundational-tasks";
+import GoogleCloudManageResources from "./google-cloud-manage-resources";
+import GoogleCloudTerraform from "./google-cloud-terraform";
 import GoogleMachineLearning from "./google-machine-learning";
 import IbmAiFundamentals from "./ibm-ai-fundamentals";
 import IbmFitCyberSecurity from "./ibm-fit-cyber-security";
@@ -12,7 +16,7 @@ const ResumeCertifications: React.FC = () => {
   return (
     <div className="max-w-[1000px] m-auto my-2 md:mt-4 md:mb-12 md:-mt-2 xl:mt-0 xl:pb-4 xl:min-h-[575px] flex flex-col">
       <ComponentViewer
-        title="Certification Viewer"
+        title="Credential Viewer"
         defaultPath="Preface"
         defaultComponent={<CertificationPreface />}
         componentMenu={[
@@ -21,7 +25,7 @@ const ResumeCertifications: React.FC = () => {
             component: <CertificationPreface />,
           },
           {
-            title: "General",
+            title: "Prerequisite",
             menuItems: [
               {
                 title: "Fit: Web Developer",
@@ -33,6 +37,18 @@ const ResumeCertifications: React.FC = () => {
               },
               { title: "Fit: IT Design", component: <IbmFitItDesign /> },
               { title: "Fit: Linux Admin", component: <IbmFitLinuxAdmin /> },
+            ],
+          },
+          {
+            title: "Cloud Platforms",
+            menuItems: [
+              {
+                title: "Infrastructure",
+                component: <GoogleCloudFoundationalTasks />,
+              },
+              { title: "Resources", component: <GoogleCloudManageResources /> },
+              { title: "Environments", component: <GoogleCloudEnvironments /> },
+              { title: "Terraform", component: <GoogleCloudTerraform /> },
             ],
           },
           {
@@ -48,8 +64,8 @@ const ResumeCertifications: React.FC = () => {
             title: "In Progress",
             menuItems: [
               {
-                title: "Cloud Engineer",
-                component: <GoogleCloudEngineer />,
+                title: "Cloud Developer",
+                component: <GoogleCloudDeveloper />,
               },
               {
                 title: "Machine Learning",

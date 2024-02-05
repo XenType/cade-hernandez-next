@@ -5,7 +5,7 @@ import GameStellaformer from "@/components/content/projects/personal/game-stella
 import GameZeepBop from "@/components/content/projects/personal/game-zeep-bop";
 import PersonalIntro from "@/components/content/projects/personal/intro";
 import NpmTestLogic from "@/components/content/projects/personal/npm-test-logic";
-import SkillMachineLearning from "@/components/content/projects/personal/skill-machine-learning";
+import SkillCloudDeveloper from "@/components/content/projects/personal/skill-cloud-dev";
 
 const PersonalProjectsPage: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const PersonalProjectsPage: React.FC = () => {
           <VerticalSlideshow
             slides={[
               <PersonalIntro key="intro" />,
-              <SkillMachineLearning key="skill" />,
+              <SkillCloudDeveloper key="skilldev" />,
               <GameZeepBop key="zeep" />,
               <GameStellaformer key="sella" />,
               <NpmTestLogic key="npm" />,

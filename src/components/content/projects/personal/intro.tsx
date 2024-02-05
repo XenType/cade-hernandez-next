@@ -22,6 +22,7 @@ const PersonalIntro: React.FC = () => {
           In 2024 I plan to:
           <ul className="list-disc pl-4 md:pl-10 pt-2">
             <li>Finish and release my first marketable mobile game.</li>
+            <li>Acquire a Google Cloud Developer certification.</li>
             <li>Acquire a Google Machine Learning Engineer certification.</li>
             <li>Expand ZoCa to include additional product domains.</li>
             <li>Find a new position at an AI-forward company.</li>

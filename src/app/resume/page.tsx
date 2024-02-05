@@ -41,7 +41,7 @@ const ResumePage: React.FC = () => {
               content: <ResumeExperience />,
             },
             {
-              title: "Certifications",
+              title: "Certifications & Badges",
               content: <ResumeCertifications />,
             },
             {
