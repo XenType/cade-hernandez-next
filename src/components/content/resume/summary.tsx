@@ -39,13 +39,15 @@ const ResumeSummary: React.FC = () => {
       </div>
       <div>
         <Indentation spaces={3} />
-        Currently, I'm taking courses to learn more about the emerging field of{" "}
+        I'm very excited to work with a company that is putting cloud
+        architecture and AI to use in new and exciting ways! Currently, I'm
+        taking courses to update and certify my existing developer skills and to
+        learn more about the emerging field of{" "}
         <span className="underline decoration-cade-blue-med decoration-2">
           Artificial intelligence.
         </span>{" "}
-        I've completed an IBM fundamentals course and am working through the
-        Google Machine Learning Engineer learning plan. I'm very excited to work
-        with a company that is putting AI to use in new and exciting ways!
+        Keep scrolling to check out skill badges and certifications I've earned
+        so far.
       </div>
     </div>
   );
