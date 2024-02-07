@@ -9,7 +9,7 @@ const GoogleMachineLearning: React.FC = () => {
     >
       <div className="h-full flex flex-col mb-12">
         <div>
-          Even as I prepare for the Professional Cloud Developer exame, I've
+          Even as I prepare for the Professional Cloud Developer exam, I've
           started looking ahead at this Machine Learning Engineer path as my
           next goal.
         </div>
