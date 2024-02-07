@@ -18,7 +18,7 @@ const ConnectSocialMedia: React.FC = () => {
           <LinkedInIcon className="text-8xl text-white/60" fontSize="inherit" />
           <div className="flex-grow">
             <Headline className="text-2xl text-white/60 font-semibold">
-              in/c-cade-hernandez/
+              in/c-cade-hernandez
             </Headline>
           </div>
         </div>
@@ -35,7 +35,7 @@ const ConnectSocialMedia: React.FC = () => {
           />
           <div className="flex grow">
             <Headline className="text-2xl text-white/60 font-semibold">
-              /c_cade_hernandez/
+              /c_cade_hernandez
             </Headline>
           </div>
         </div>
