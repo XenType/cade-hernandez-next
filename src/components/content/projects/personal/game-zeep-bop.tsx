@@ -1,3 +1,5 @@
+import { ExternalLinks } from "@/components/constants";
+import { ExternalLinkNames } from "@/components/enum";
 import PersonalTemplate from "../personal-template";
 import ThumbZeepBop from "./thumbnails/thumb-zeepbop";
 
@@ -10,7 +12,7 @@ const GameZeepBop: React.FC = () => {
       buttonText1="Source Code"
       href1="https://github.com/XenType/RunZeepBop"
       buttonText2="Download Desktop Version"
-      href2="https://drive.google.com/file/d/1i3CufjSuVxftgySxQn-mUGhACAgeWmi0/view?usp=drive_link"
+      href2={ExternalLinks[ExternalLinkNames.ZEEPBOP_GAME]}
       skillList={["Godot 4", "GDScript"]}
       thumbnail={<ThumbZeepBop />}
     >
