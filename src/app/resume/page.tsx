@@ -1,3 +1,4 @@
+import { ExternalLinks } from "@/components/constants";
 import Attention from "@/components/content/common/attention";
 import LinkButton from "@/components/content/common/link-button";
 import StackingPanels from "@/components/content/common/stacking-panels";
@@ -6,6 +7,7 @@ import ResumeEducation from "@/components/content/resume/education";
 import ResumeExperience from "@/components/content/resume/experience";
 import ResumeSkills from "@/components/content/resume/skills";
 import ResumeSummary from "@/components/content/resume/summary";
+import { ExternalLinkNames } from "@/components/enum";
 
 const ResumePage: React.FC = () => {
   return (
@@ -13,7 +15,7 @@ const ResumePage: React.FC = () => {
       <div className="w-full flex flex-row justify-end px-8 py-4">
         <div className="flex">
           <LinkButton
-            href="https://drive.google.com/file/d/1XHtOwhdSNBAMkqiNJuMv_irlw75pfkoW/view?usp=sharing"
+            href={ExternalLinks[ExternalLinkNames.RESUME]}
             target="_blank"
           >
             <div className="flex flex-row">
