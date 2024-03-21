@@ -2,7 +2,9 @@ import { ExternalLinkNames } from "./enum";
 
 const ExternalLinks = {
   [ExternalLinkNames.RESUME]:
-    "https://drive.google.com/file/d/1XHtOwhdSNBAMkqiNJuMv_irlw75pfkoW/view?usp=sharing",
+    "https://drive.google.com/file/d/1l9CdpTrcGXBt5X_VutzfI9VS6QQ5_aoA/view?usp=sharing",
+  [ExternalLinkNames.RESUME2]:
+    "https://drive.google.com/file/d/1l9CdpTrcGXBt5X_VutzfI9VS6QQ5_aoA/view?usp=sharing",
   [ExternalLinkNames.GITHUB]: "https://github.com/XenType",
   [ExternalLinkNames.LINKEDIN]:
     "https://www.linkedin.com/in/cade-hernandez-9a9572264",

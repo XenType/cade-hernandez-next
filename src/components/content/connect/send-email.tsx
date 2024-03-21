@@ -14,7 +14,7 @@ const ConnectSendEmail: React.FC = () => {
         className="w-full"
       >
         <div className="flex flex-col md:flex-row md:space-x-8 justify-center items-center w-full">
-          <EmailIcon className="text-9xl text-white/60" fontSize="inherit" />
+          <EmailIcon className="text-9xl text-white/60" fontSize="large" />
           <div>
             <Headline className="text-2xl text-white/60 font-semibold">
               info@cade.hernandez.com

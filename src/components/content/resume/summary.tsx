@@ -28,10 +28,10 @@ const ResumeSummary: React.FC = () => {
       <div>
         <Indentation spaces={3} />
         My skill set includes a wide variety of tool kits, environments and
-        languages with my most recent projects being built in various frameworks
-        running in NodeJS. I have experience designing and creating{" "}
+        languages with my most recent projects being built in with NextJS &
+        React. I have experience designing and creating{" "}
         <span className="underline decoration-cade-blue-med decoration-2">
-          single-page apps, microservices, RESTful APIs and many more
+          single-page apps, microservices, cloud functions and many more
         </span>{" "}
         modern software patterns. I'm also versed in setting up projects in
         GitHub and Google Cloud Platform to create fast, safe and effective
@@ -41,13 +41,13 @@ const ResumeSummary: React.FC = () => {
         <Indentation spaces={3} />
         I'm very excited to work with a company that is putting cloud
         architecture and AI to use in new and exciting ways! Currently, I'm
-        taking courses to update and certify my existing developer skills and to
-        learn more about the emerging field of{" "}
+        taking courses to enhance my knowledge of cloud platform architecture
+        and learn more about the emerging field of{" "}
         <span className="underline decoration-cade-blue-med decoration-2">
           Artificial intelligence.
         </span>{" "}
-        Keep scrolling to check out skill badges and certifications I've earned
-        so far.
+        Scroll further to view the completion and skill badges I've earned so
+        far.
       </div>
     </div>
   );
