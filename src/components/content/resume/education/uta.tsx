@@ -17,7 +17,7 @@ const ResumeEducationUta: React.FC<EducationInstitutionProps> = ({
         </div>
         <div className="flex flex-col items-center space-y-2 w-full px-2 md:px-10">
           <div className="flex flex-col items-center bg-white rounded-md p-2 md:p-4 text-xs md:text-sm w-full space-y-2">
-            <div className="font-semibold">Software Design Refresher</div>
+            <div className="font-semibold">Software Design Course Audit</div>
             <ul className="flex flex-col w-full ml-6 md:ml-16 list-disc">
               <li>RESTful API Architecture</li>
               <li>Modern Scripting</li>

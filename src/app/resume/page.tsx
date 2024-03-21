@@ -2,9 +2,9 @@ import { ExternalLinks } from "@/components/constants";
 import Attention from "@/components/content/common/attention";
 import LinkButton from "@/components/content/common/link-button";
 import StackingPanels from "@/components/content/common/stacking-panels";
-// import ResumeCertifications from "@/components/content/resume/certifications";
 import ResumeEducation from "@/components/content/resume/education";
 import ResumeExperience from "@/components/content/resume/experience";
+import ResumeQualifications from "@/components/content/resume/qualifications";
 import ResumeSkills from "@/components/content/resume/skills";
 import ResumeSummary from "@/components/content/resume/summary";
 import { ExternalLinkNames } from "@/components/enum";
@@ -46,6 +46,10 @@ const ResumePage: React.FC = () => {
             //   title: "Certifications & Badges",
             //   content: <ResumeCertifications />,
             // },
+            {
+              title: "Coursework",
+              content: <ResumeQualifications />,
+            },
             {
               title: "Education",
               content: <ResumeEducation />,

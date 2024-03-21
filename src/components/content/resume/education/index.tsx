@@ -12,8 +12,8 @@ const MCC_STORY = `When I attended MCC it was one of the most affordable junior 
   I made a great core group of friends, some of which I worked with in my first role as a Software Engineer.`;
 
 const UTA_STORY = `In addition to seeking a way to work into an Engineering role at Blizzard Entertainment
-  I began taking courses at UT of Austin to modernize my skill set. While at first I thought to seek a Bachelor's 
-  Degree, I eventually found auditing classes was less expensive and a better fit my work schedule.`;
+  I began auditing courses at UT of Austin to modernize my skill set. While at first I thought to seek a Bachelor's 
+  Degree, I found auditing classes was less expensive and a better fit my work schedule.`;
 
 const ResumeEducation: React.FC = () => {
   const [selectedInstitution, setSelectedInstitution] = useState<

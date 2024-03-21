@@ -12,6 +12,7 @@ enum PagePath {
 
 enum ExternalLinkNames {
   RESUME,
+  RESUME2,
   GITHUB,
   LINKEDIN,
   ZOCAAISTUDIO,
