@@ -1,9 +1,7 @@
-import HomeContent from "@/components/content/home/home-content";
+import HomePage from "@/components/pages/home";
 
-export default function Home() {
-  return (
-    <div className="w-full h-full bg-white flex px-16">
-      <HomeContent />
-    </div>
-  );
-}
+const Home: React.FC = () => {
+  return <HomePage />;
+};
+
+export default Home;
