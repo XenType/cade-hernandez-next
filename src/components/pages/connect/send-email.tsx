@@ -10,7 +10,7 @@ const ConnectSendEmail: React.FC = () => {
       hover:shadow-none hover:bg-accent-blue-light/20 cursor-pointer"
     >
       <Link
-        href="mailto:info@cade.hernandez.com"
+        href="mailto:info@cadehernandez.com"
         target="_blank"
         className="w-full"
       >
@@ -18,7 +18,7 @@ const ConnectSendEmail: React.FC = () => {
           <div className="text-6xl">
             <EmailIcon fontSize="inherit" />
           </div>
-          <div className="text-2xl font-semibold">info@cade.hernandez.com</div>
+          <div className="text-2xl font-semibold">info@cadehernandez.com</div>
           <div className="text-base font-medium">(click to launch email)</div>
         </div>
       </Link>
