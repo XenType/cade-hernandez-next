@@ -219,6 +219,27 @@ const FREELANCE_PROJECTS: ProjectListEntry[] = [
 ];
 const PERSONAL_PROJECTS: ProjectListEntry[] = [
   {
+    id: "creator-toolbox",
+    title: "BryteMuse (active)",
+    organization: "Zoca, LLC",
+    timeFrame: "2024",
+    description:
+      "I've launched a Beta Phase for an AI powered toolbox that helps creators with clearing creative blocks, enhancing web content for higher SEO value and generating high-quality translations and artificial voices.",
+    skillsUsed: [
+      "NodeJS",
+      "React",
+      "NextJS",
+      "CI/CD",
+      "TypeScript",
+      "Vertex AI",
+      "Tailwind CSS",
+      "Firestore DB",
+      "Google Cloud Platform",
+    ],
+    action: "View Application",
+    actionLink: "https://www.brytemuse.com",
+  },
+  {
     id: "cade-hernandez",
     title: "CadeHernandez.com",
     organization: "",
@@ -236,25 +257,6 @@ const PERSONAL_PROJECTS: ProjectListEntry[] = [
     ],
     action: "View Source",
     actionLink: "https://github.com/XenType/cade-hernandez-next",
-  },
-  {
-    id: "creator-toolbox",
-    title: "Creator Toolbox (active)",
-    organization: "Zoca, LLC",
-    timeFrame: "2024",
-    description:
-      "I'm currently developing an AI powered toolbox for creators to help with clearing creative blocks, enhancing web content for higher SEO value and generating high-quality translations and artificial voices. When this projects enters the Beta phase, a link will be posted on this card.",
-    skillsUsed: [
-      "NodeJS",
-      "React",
-      "NextJS",
-      "CI/CD",
-      "TypeScript",
-      "Vertex AI",
-      "Tailwind CSS",
-      "Firestore DB",
-      "Google Cloud Platform",
-    ],
   },
   {
     id: "test-logic",

@@ -2,6 +2,7 @@
 import LinkCard from "@/components/content/link-card";
 import StandardButton from "@/components/content/standard-button";
 import { AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -19,6 +20,25 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
       <div className="text-fill-gray-dark font-medium text-lg">
         Hi, I&apos;m Cade. Thanks for visiting!
       </div>
+
+      <div
+        className="flex flex-col items-center p-4 space-y-2
+          rounded-lg border border-fill-gray-light"
+      >
+        <div className="text-sm font-semibold text-fill-gray-med">
+          Want a look at my current project?
+        </div>
+        <div>
+          <Link
+            href="https://www.brytemuse.com"
+            className="text-blue-600 font-bold underline text-lg"
+            target="_blank"
+          >
+            BryteMuse is now in Beta
+          </Link>
+        </div>
+      </div>
+
       <div className="flex flex-row w-full md:max-w-[600px] justify-around space-x-2">
         <StandardButton
           type={viewMode === "explore" ? "primary" : "secondary"}
@@ -59,7 +79,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
           >
             <LinkCard
               title="Take a Peek..."
-              description="...at some of my past project and see if my skills are a match for your needs."
+              description="...at some of my past projects and see if my skills are a match for your needs."
               onClick={() => router.push("/projects")}
               motionKey="collaborate-project-card"
             />
